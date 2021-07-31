@@ -1,0 +1,9 @@
+backend:
+- {name: 'Java'}
+- {name: 'Elasticsearch'}
+- {name: 'Stellar Structures'}
+
+devops:
+- {name: 'Jenkins'}
+- {name: 'Elasticsearch'}
+- {name: 'Stellar Structures'}

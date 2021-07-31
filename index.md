@@ -1,6 +1,6 @@
 ---
-layout: home
-title: "Home"
+layout: index
+title: "Index"
 ---
 
 홈에 계시되는 부분, 이부분에 나에 대한

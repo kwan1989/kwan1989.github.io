@@ -1,14 +1,8 @@
 menu:
-- {name: 'people', url: '/people'}
-- {name: 'publications', url: '/publications'}
-- {name: 'courses', url: '/courses'}
-- {name: 'cv', url: '/cv'}
+- {name: '주요 성과', url: '/results'}
+- {name: '기술 스택', url: '/skills'}
+- {name: '경력', url: '/cv'}
 - {name: 'contact', url: '/contact'}
-
-courses:
-- {name: 'Vector Calculus', url: 'vector-calculus'}
-- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-- {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
 - {icon: 'github', link: 'https://github.com/LeNPaul'}
