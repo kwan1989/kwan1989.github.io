@@ -1,19 +1,35 @@
----
-layout: default
----
-
-<!-- 자기소개 -->
-{% include aboutme.html %}
-<!-- 주요 성과 -->
-{% include results.html %}
-<!-- 기술 스택 -->
-{% include skills.html %}
-
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
-    {% endfor %}
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "ko" }}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+        <!-- header -->
+        {% include header.html %}
+        <!-- 자기소개 -->
+        {% include aboutme.html %}
+        <!-- 경험 -->
+        {% include experience.html %}
+        <!-- 주요 성과 -->
+        {% include achievement.html %}
+        <!-- 기술 스택 -->
+        {% include skills.html %}
+        <!-- 주소록 -->
+        {% include concat.html %}
+        <!-- 업데이트 내역 -->
+        {% include update.html %}
+        <!-- footer -->
+        {% include footer.html %}
+    </div>
+  </body>
+</html>

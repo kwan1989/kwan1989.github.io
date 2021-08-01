@@ -1,0 +1,14 @@
+<div class="row g-5 mb-5">
+    <div class="col-md-5">
+        <h4><i><u>{{ include.item.name }}</u></i></h4>
+        {%- if include.item.link -%}
+            <a>{% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+        {%- endif -%}
+    </div>
+    <div class="col-md-10">
+        {%- if include.item.quote -%}
+        <p class="fw-bold">{{ include.item.quote }}</p>
+        {%- endif -%}
+        {{ include.item.description | strip | markdownify }}
+    </div>
+</div>

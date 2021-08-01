@@ -7,9 +7,13 @@ title: "Index"
 상품 수집/색인기 개발, 인기검색어, 검색로그에 관련된 배치를 개발하였으며 
 현재는 해당 배치들의 관리와 개선을 주요업무로 하고 있습니다.
 
-현재 관심이 있는 부분은
-* _**ElasticSearch의 플러그인**_
-* _**로그데이터 활용**_
+현재 관심이 있는 부분
+* _**ElasticSearch Plugin**_
+* _**Log Data Application**_
 * _**JUnit Test Case**_  
 
-이며 추후 관련되어 제대로 정리 및 활용을 해보고 싶습니다.
+#### `Blog Link`  
+* <a href="https://velog.io/@mertyn88">_https://velog.io/@mertyn88_</a>   
+
+#### `Github Link`  
+* <a href="https://github.com/mertyn88">_https://github.com/mertyn88_</a>

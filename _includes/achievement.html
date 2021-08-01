@@ -1,0 +1,15 @@
+<div class="row g-5 mb-5">
+    <div>
+        <h3 class="fw-bold border-bottom pb-3 mb-5">Achievement</h3>
+        {% for project in site.data.achievement %}
+            {% include {{ project.layout | default: 'left' | append: ".html" }} item = project %}
+        {% endfor %}
+        <!-- 이전직장 경력기술서 링크 -->
+        <div class="row g-5 mb-5">
+            <div class="col-md-5">
+                <h4>이전 직장 경력기술서 파일 첨부</h4>
+                <a href="/projects/와이즈넛_이준명.pdf">와이즈넛_경력기술서</a>
+            </div>
+        </div>
+    </div>
+</div>

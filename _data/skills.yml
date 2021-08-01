@@ -1,9 +1,12 @@
 backend:
-- {name: 'Java'}
-- {name: 'Elasticsearch'}
-- {name: 'Stellar Structures'}
+- {name: 'Java, Bash'}
+- {name: 'Spring Boot, Spring Async, MyBatis, JUnit4'}
+- {name: 'Elasticsearch, ES Plugin'}
+- {name: 'Gradle'}
+- {name: 'IntelliJ, Vim'}
 
 devops:
+- {name: 'MySQL'}
 - {name: 'Jenkins'}
-- {name: 'Elasticsearch'}
-- {name: 'Stellar Structures'}
+- {name: 'AWS EC2, AWS RDS'}
+- {name: 'Linux'}

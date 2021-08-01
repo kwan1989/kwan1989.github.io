@@ -1,3 +1,8 @@
+# 이준명 포트폴리오
+> 사용테마 정보
+
+---
+
 # academic
 
 ### A Jekyll theme for academia
