@@ -9,6 +9,7 @@
                 <div class="col-md-10">
                     <p style="margin-bottom : 0;"><b>기간</b> : {{ item.range }}</p>
                     {%- if item.department -%}<p style="margin-bottom : 0;"><b>부서</b> : {{ item.department }}</p>{%- endif -%}
+                    {%- if item.description -%}<p style="margin-bottom : 0;"><b>활동</b> : {{ item.description }}</p>{%- endif -%}
                     {%- if item.position -%}<p style="margin-bottom : 0;"><b>직급</b> : {{ item.position }}</p>{%- endif -%}
                     {%- if item.work -%}<p style="margin-bottom : 0;"><b>업무</b> : {{ item.work }}</p>{%- endif -%}
                 </div>
