@@ -4,7 +4,7 @@
   quote: >
     홈플러스에서 취급하는 상품에 대해서, 검색이 가능하도록 상품에 대한 정보를 DB Query를 통해서 수집하고 ElasticSearch에 색인
   description: |
-    * 멀티프로젝트 개발 ( base | crawler | indexer )
+    * 멀티프로젝트 개발 ( base \| crawler \| indexer )
     * AS-IS 상품 색인 구조 조사 및 TO-BE 상품 색인 구조 설계
     * Spring Async를 이용한 <mark>멀티쓰레드 처리</mark> (일정 사이즈 큐가 쌓이게 되면 CompletableFuture.get()으로 처리 이후 수행)
     * 수집은 json <mark>Write</mark>, 색인은 json <mark>Read</mark>
