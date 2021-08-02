@@ -1,0 +1,4 @@
+list:
+  - {name: '홈플러스',range: '2020. 01 ~ 재직중',department: '모바일검색TF',position: '대리 ~ 과장',work: '홈플러스 검색서비스 배치 개발'}
+  - {name: 'Fun.D',range: '2020. 05 ~ 2020. 12',description: '온라인 커뮤니티 Fun.D에서 주최하는 제5회 사이드 프로젝트로 신청자들이 직접 개발팀을 만들어서 과제 수행',work: '중고 오디오 거래 앱인 Flio 백엔드 개발'}
+  - {name: '와이즈넛',range: '2014. 03 ~ 2019. 12',department: '중부개발팀',position: '사원 ~ 대리',work: '특허청 검색서비스 구축 및 관리'}

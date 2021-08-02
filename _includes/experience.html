@@ -1,37 +1,18 @@
 <div class="row g-5 mb-5">
     <div>
         <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
-        <div class="row g-5 mb-5">
-            <div class="col-md-2">
-                <h4>홈플러스</h4>
+        {% for item in site.data.experience.list %}
+            <div class="row g-5 mb-5">
+                <div class="col-md-2">
+                    <h4>{{ item.name }}</h4>
+                </div>
+                <div class="col-md-10">
+                    <p style="margin-bottom : 0;"><b>기간</b> : {{ item.range }}</p>
+                    {%- if item.department -%}<p style="margin-bottom : 0;"><b>부서</b> : {{ item.department }}</p>{%- endif -%}
+                    {%- if item.position -%}<p style="margin-bottom : 0;"><b>직급</b> : {{ item.position }}</p>{%- endif -%}
+                    {%- if item.work -%}<p style="margin-bottom : 0;"><b>업무</b> : {{ item.work }}</p>{%- endif -%}
+                </div>
             </div>
-            <div class="col-md-10">
-                <p><b>기간</b> : 2020. 01 ~ 재직중</p>
-                <p><b>부서</b> : 모바일검색TF</p>
-                <p><b>직급</b> : 대리 ~ 과장</p>
-                <p><b>주요업무</b> : 홈플러스 검색서비스 배치 개발</p>
-            </div>
-        </div>
-        <div class="row g-5 mb-5">
-            <div class="col-md-2">
-                <h4>Fun.D</h4>
-            </div>
-            <div class="col-md-10">
-                <p><b>기간</b> : 2020. 05 ~ 2020. 12</p>
-                <p><b>설명</b> : 온라인 커뮤니티 Fun.D에서 주최하는 제5회 사이드 프로젝트로 신청자들이 직접 개발팀을 만들어서 과제 수행</p>
-                <p><b>주요업무</b> : 중고 오디오 거래 앱인 FLIO의 백엔드 개발</p>
-            </div>
-        </div>
-        <div class="row g-5 mb-5">
-            <div class="col-md-2">
-                <h4>와이즈넛</h4>
-            </div>
-            <div class="col-md-10">
-                <p><b>기간</b> : 2014. 03 ~ 2019. 12</p>
-                <p><b>부서</b> : 중부개발팀</p>
-                <p><b>직급</b> : 사원 ~ 대리</p>
-                <p><b>주요업무</b> : 특허청 검색서비스 구축 및 관리</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
