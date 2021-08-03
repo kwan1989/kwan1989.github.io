@@ -1,4 +1,17 @@
 - layout: left
+  name: 프로젝트 공통 개발 환경
+  link:
+  quote: >
+    프로젝트 개발 Version
+  description: |
+    * Java Version : <b>amazon corretto-11</b>
+    * ElasticSearch Version : <b>7.9.2</b>
+    * Spring boot Version : <b>2.1.6.RELEASE</b>
+    * Gradle Version : <b>5.6.4</b>
+    * MyBatis Version : <b>3.5.5</b>
+    * Vender : MySQL
+
+- layout: left
   name: 상품 수집/색인 배치
   link:
   quote: >
