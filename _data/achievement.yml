@@ -9,7 +9,7 @@
     * Spring boot Version : <b>2.1.6.RELEASE</b>
     * Gradle Version : <b>5.6.4</b>
     * MyBatis Version : <b>3.5.5</b>
-    * Vender : MySQL
+    * Vender : <b>MySQL</b>
 
 - layout: left
   name: 상품 수집/색인 배치
