@@ -1,8 +1,8 @@
 <div class="row g-5 mb-5">
-    <div class="col-md-5">
+    <div class="col-md-5" style="display: flex; align-items: baseline;">
         <h4><i><u>{{ include.item.name }}</u></i></h4>
         {%- if include.item.link -%}
-            <a>{% include a.html href=include.item.link class="link" %}{{ include.item.link }}</a>
+            &nbsp;&nbsp;&nbsp;<a href="{{ include.item.link }}">[ 프로젝트 상세 보기 ]</a>
         {%- endif -%}
     </div>
     <div class="col-md-10">

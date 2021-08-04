@@ -13,7 +13,7 @@
 
 - layout: left
   name: 상품 수집/색인 배치
-  link:
+  link: /projects/이준명_상품수집색인배치.pdf
   quote: >
     홈플러스에서 취급하는 상품에 대해서, 검색이 가능하도록 상품에 대한 정보를 DB Query를 통해서 수집하고 ElasticSearch에 색인
   description: |
@@ -27,7 +27,7 @@
 
 - layout: left
   name: 검색어 TOP10 배치
-  link:
+  link: /projects/이준명_인기검색어배치.pdf
   quote: >
     홈플러스 프론트에서 가장많이 검색되는 TOP10 키워드를 노출
   description: |
