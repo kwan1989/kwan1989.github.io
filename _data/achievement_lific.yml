@@ -23,6 +23,17 @@
     * data-rest 통계 결과 DB삽입
 
 - layout: left
+  name: data-rest ( 지표 데이터 ) API 개발
+  link: /projects/라이픽_데이터_api.pdf
+  github: https://github.com/mertyn88/lific-data-rest
+  quote: >
+    소비자와 업체의 각종 정보를 지표로 나타내기 위한 API
+  description: |
+    * Flask, Pandas를 이용한 데이터 처리
+    * GET Path Variable방식으로 날짜 조건, 반환 데이터 형식을 지정 ( json, html, csv, chart )
+    * 비개발자도 주소값만으로 원하는 데이터를 얻을 수 있도록 설계
+
+- layout: left
   name: kafka-rest-proxy 오픈소스 수정
   link:
   github: https://github.com/mertyn88/kafka-rest
