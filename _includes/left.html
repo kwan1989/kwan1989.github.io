@@ -1,11 +1,16 @@
 <div class="row g-5 mb-5">
     <div class="col-md-5" style="display: flex; align-items: baseline;">
-        <h4><i><u>{{ include.item.name }}</u></i></h4>
-        {%- if include.item.link -%}
-            &nbsp;&nbsp;&nbsp;<a href="{{ include.item.link }}">[ 프로젝트 상세 보기 ]</a>
-        {%- endif -%}
+        <h4>{{ include.item.name }}</h4>
     </div>
-    <div class="col-md-10">
+    <p style="margin-top: 5px;">
+        {%- if include.item.link -%}
+            <a href="{{ include.item.link }}">[ 프로젝트 상세 ]</a>
+        {%- endif -%}
+        {%- if include.item.github -%}
+            <a href="{{ include.item.github }}">[ Github ]</a>
+        {%- endif -%}
+    </p>
+    <div class="col-md-10" style="margin-top: 10px;">
         {%- if include.item.quote -%}
         <p class="fw-bold">{{ include.item.quote }}</p>
         {%- endif -%}

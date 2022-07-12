@@ -13,6 +13,16 @@
     </div>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
+        <h4>FrontEnd</h4>
+      </div>
+      <div class="col-md-10">
+        {% for item in site.data.skills.frontend %}
+        <p><i>{{ item.name }}</i></p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
         <h4>DevOps</h4>
       </div>
       <div class="col-md-10">

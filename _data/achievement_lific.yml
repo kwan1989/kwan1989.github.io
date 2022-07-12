@@ -1,0 +1,110 @@
+- layout: left
+  name: 개발 환경
+  link:
+  quote: >
+    프로젝트 개발 Version
+  description: |
+    * Java Version : <b>amazon corretto-11</b>
+    * Python Version : <b>3.9</b>
+    * ElasticSearch Version : <b>7.12.0</b>
+    * Amazon EMR Version : <b>6.5.0</b>
+    * Spring boot Version : <b>2.4.0.RELEASE</b>
+    * Gradle Version : <b>7.1.0</b>
+    * PostgreSQL Version : <b>12.7</b>
+    * Kubernetes Deployment : <b>JenkinsFiles</b> 작성
+
+- layout: left
+  name: Airflow dag 개발
+  link:
+  github: https://github.com/mertyn88/lific-airflow-dags
+  quote: >
+  description: |
+    * Amplitude 이벤트 데이터 백업
+    * data-rest 통계 결과 DB삽입
+
+- layout: left
+  name: kafka-rest-proxy 오픈소스 수정
+  link:
+  github: https://github.com/mertyn88/kafka-rest
+  quote: >
+    앱이나 타 Language에서 Kafka producer를 위한 rest-api.
+  description: |
+    * Confluend의 kafka-rest-proxy를 fork 이후 필요 부분 추가, 수정 (GlassFish HK2)
+    * 추가, 변경 코드는 github-README.md 참고
+
+- layout: left
+  name: shover(Kafka producer send) 라이브러리 개발
+  link: /projects/라이픽_카프카_프로듀서.pdf
+  github: https://github.com/mertyn88/lific-shover
+  quote: >
+    라이픽 Java 백엔드 도메인에서 사용하는 kafka producer 라이브러리.
+  description: |
+    * Spring framework를 사용하지 않고 개발
+    * 스키마레지스트리를 통한 무결성 검증이 성공한 데이터만 topic에 producer
+    * 네트워크 예외가 발생할 경우, 로컬 파일스토리지에 fileCallback 저장 ( Rolling )
+    * 도메인별 필요 컬럼 값 모델링 정의
+    * 메소드별 주석을 통해 사용법을 공유하기 위해 빌드시 주석이 남도록 처리
+
+- layout: left
+  name: Amazon EKS(Elastic Kubernetes Service) 서비스 구성
+  link:
+  github: https://github.com/mertyn88/lific-k8s-config
+  quote: >
+    라이픽 EKS 데이터 관련 서비스 구성
+  description: |
+    * Elasticsearch 7.12.0
+    * Kibana 7.12.0
+    * Logstash 7.12.0
+    * Schema-registry 7.0.1
+    * Schema-registry-ui 0.9.5
+    * Kafka-connect
+    * Kafka-rest
+
+- layout: left
+  name: 하이브 사용자 정의 함수 작성
+  link:
+  github: https://github.com/mertyn88/lific-hive-udf
+  quote: >
+    사용자 정의 함수
+  description: |
+    * 복호화 데이터
+    * 생년원일을 연령대로 변경 (Group By)
+    * 라이픽 수수료 계산
+
+- layout: left
+  name: Amazon EMR(Elastic MapReduce) 환경 구축
+  link:
+  github: https://github.com/mertyn88/lific-emr
+  quote: >
+    라이픽 EMR 환경을 구축
+  description: |
+    * 마스터노드 1, 코어 노드 2, 태스크 노드 2로 구성
+    * 하이브 설정
+    * Hue 설정 ( RDB, webhdfs )
+    * Oozie workflow 구성 ( Sqoop, Hive )
+
+- layout: left
+  name: 검색 - 사전관리자 웹 개발
+  link: /projects/라이픽_사전관리자.pdf
+  github: https://github.com/mertyn88/lific-search-manager
+  quote: >
+    검색서비스와 연관된 기능을 관리하는 운영자 웹 서비스
+  description: |
+    * 사전별 조회, 삽입, 수정, 삭제에 대한 기능을 수행하는 페이지 구현 ( UI + 기능 )
+    * 기능 이벤트 발생시 History 내역을 남길 수 있도록 처리
+    * 대시보드를 통해 월별 변경되는 사전키워드 통계 확인 ( 차트 )
+    * 대시보드에 색인서버와 검색API에 변경되는 사전 정보를 배포할 수 있는 기능
+    * 대시보드에 현재 상태의 사전정보를 다운로드하는 기능
+
+- layout: left
+  name: 검색 - API 개발
+  link: /projects/라이픽_검색API.pdf
+  github: https://github.com/mertyn88/lific-search-api
+  quote: >
+    라이픽에서 취급하는 업체, 상품, 스탭정보에 대해 여러 조건의 검색서비스가 가능하도록 검색요청을 하는 서비스
+  description: |
+    * 멀티프로젝트 개발 ( common \| consumer \| root )
+    * 내부 도메인의 검색요청을 처리하는 root 모듈 개발
+    * 전시도메인에서 요청하는 파라미터의 의한 검색 결과값을 전달
+    * 통합검색시 쓰레드 처리
+
