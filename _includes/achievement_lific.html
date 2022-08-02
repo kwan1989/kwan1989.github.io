@@ -1,8 +1,0 @@
-<div class="row g-5 mb-5">
-    <div>
-        <h3 class="fw-bold border-bottom pb-3 mb-5">Achievement - Lific [ Github은 08.01 이후 Public 예정 ]</h3>
-        {% for project in site.data.achievement_lific %}
-            {% include {{ project.layout | default: 'left' | append: ".html" }} item = project %}
-        {% endfor %}
-    </div>
-</div>
