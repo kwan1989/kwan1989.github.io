@@ -3,10 +3,15 @@
         <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
         {% for item in site.data.experience.list %}
             <div class="row g-5 mb-5">
-                <div class="col-md-2">
-                    <h4>{{ item.name }}</h4>
+
+<!--                Experience 부분 좌측 회사명 부분 수정은 experience.yml-->
+                <div class="col-md-3">
+                    <p><h4>{{ item.name }}</h4></p>
+                    <p><i><a href="{{ item.company }}" >{{ item.company }}</a></i></p>
                 </div>
-                <div class="col-md-10">
+
+<!--                Experience 부분 우측 영역 수정은 experience.yml-->
+                <div class="col-md-5">
                     <p style="margin-bottom : 0;"><b>기간</b> : {{ item.range }}</p>
                     {%- if item.link -%}<p style="margin-bottom : 0;"><b>내역</b> : <a href="{{ item.link }}">{{ item.link }}</a></p>{%- endif -%}
                     {%- if item.department -%}<p style="margin-bottom : 0;"><b>부서</b> : {{ item.department }}</p>{%- endif -%}

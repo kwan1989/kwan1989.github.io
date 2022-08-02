@@ -1,15 +1,10 @@
 backend:
-- {name: 'Java, Python, Bash'}
-- {name: 'Spring Boot, Flask, Pandas, MyBatis, JUnit'}
-- {name: 'Elasticsearch, plugin'}
-- {name: 'Airflow, Oozie, Sqoop, Hue, Kafka'}
+- {name: 'Java, C#, VB'}
+- {name: 'Spring Boot, .NetFramework'}
+- {name: 'JPA, QueryDsl, JUnit, Elasticsearch'}
+- {name: 'Swagger', 'H2'}
 - {name: 'Gradle'}
 
-frontend:
-  - {name: 'Thymeleaf, Javascript, jQuery'}
-
 devops:
-- {name: 'MySQL', 'PostgreSQL'}
-- {name: 'Jenkins, Docker, Kubernetes'}
-- {name: 'AWS EMR'}
-- {name: 'Linux'}
+- {name: 'MySQL, PostgreSQL, Oracle, MSSQL, DB2'}
+- {name: 'GitHub, Bitbucket, Jira, Confluence'}

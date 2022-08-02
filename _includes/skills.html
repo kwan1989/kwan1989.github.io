@@ -1,6 +1,6 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">기술 스택</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Tech Stack</h3>
     <div class="row g-5 mb-5">
       <div class="col-md-2">
         <h4>BackEnd</h4>
@@ -11,25 +11,25 @@
         {% endfor %}
       </div>
     </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>FrontEnd</h4>
-      </div>
-      <div class="col-md-10">
-        {% for item in site.data.skills.frontend %}
-        <p><i>{{ item.name }}</i></p>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="row g-5 mb-5">
-      <div class="col-md-2">
-        <h4>DevOps</h4>
-      </div>
-      <div class="col-md-10">
-        {% for item in site.data.skills.devops %}
+    <!--  <div class="row g-5 mb-5">
+        <div class="col-md-2">
+          <h4>FrontEnd</h4>
+        </div>
+        <div class="col-md-10">
+          {% for item in site.data.skills.frontend %}
           <p><i>{{ item.name }}</i></p>
-        {% endfor %}
+          {% endfor %}
+        </div>
+      </div> -->
+      <div class="row g-5 mb-5">
+        <div class="col-md-2">
+          <h4>DevOps</h4>
+        </div>
+        <div class="col-md-10">
+          {% for item in site.data.skills.devops %}
+            <p><i>{{ item.name }}</i></p>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
-</div>

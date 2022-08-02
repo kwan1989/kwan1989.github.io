@@ -1,5 +1,5 @@
 list:
-  - {name: '라이픽',range: '2021. 10 ~ 2022-07 <mark>07.31 사업종료</mark>', department: 'Search & Data',work: '검색 서비스 관리, EMR 구축 및 통계용 데이터 서비스 관리'}
-  - {name: '홈플러스',range: '2020. 01 ~ 2021-10', department: '모바일검색TF',position: '대리 ~ 과장',work: '홈플러스 검색서비스 배치 개발'}
-  - {name: 'Fun.D',range: '2020. 05 ~ 2020. 12', description: '온라인 커뮤니티 Fun.D에서 주최하는 제5회 사이드 프로젝트로 신청자들이 직접 개발팀을 만들어서 과제 수행',work: '중고 오디오 거래 앱인 Flio 백엔드 개발', link: 'https://github.com/mertyn88/flio_document'}
-  - {name: '와이즈넛',range: '2014. 03 ~ 2019. 12', department: '중부개발팀',position: '사원 ~ 대리',work: '특허청 검색서비스 구축 및 관리'}
+  - {name: '라이픽',range: '2022. 07 ~ 2022. 07 <mark>07.31 사업종료</mark>', department: 'Backend Engineer',work: '라이픽 서비스 백엔드 개발(Java)',company: }
+  - {name: '프레시코드',range: '2021. 12 ~ 2022. 06', department: 'Backend Engineer',work: '프레시코드 서비스 백엔드 개발(Java)',company: 'https://www.freshcode.me/'}
+  - {name: '넥스파시스템',range: '2016. 01 ~ 2021. 11', description: '기업부설연구소(주차유도)',position: '전임연구원',work: '주차유도 솔루션 개발(.NET, Java)',company: 'http://www.nexpa.co.kr'}
+  - {name: '티엔이테크',range: '2013. 10 ~ 2015. 05', department: '기업부설연구소',position: '연구원',work: '계측장비 소프트웨어 개발(C++, C#, VB)',company: 'http://www.tnetech.co.kr'}
