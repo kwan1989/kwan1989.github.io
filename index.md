@@ -10,8 +10,12 @@ title: "Index"
 
 ps. 언젠간 크나큰 개발자가 되겠지.
 
+#### `Github Link`
+* <a href="https://github.com/kwan1989">_https://github.com/kwan1989_</a>
+
+#### `Linkedin Link`
+* <a href="https://www.linkedin.com/in/kwan1989">_https://www.linkedin.com/in/kwan1989_</a>
+
 #### `Blog Link`  
 * <a href="https://velog.io/@kwan1989">_https://velog.io/@kwan1989_</a>   
 
-#### `Github Link`  
-* <a href="https://github.com/kwan1989">_https://github.com/kwan1989_</a>

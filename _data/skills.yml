@@ -1,10 +1,11 @@
 backend:
-- {name: 'Java, C#, VB'}
-- {name: 'Spring Boot, .NetFramework'}
-- {name: 'JPA, QueryDsl, JUnit, Elasticsearch'}
+- {name: 'Java, C#(.NET)'}
+- {name: 'Spring Boot, Spring MVC, Spring Batch, Spring Data JPA'}
+- {name: 'QueryDsl, JUnit, Mock, Elasticsearch'}
 - {name: 'Swagger', 'H2'}
 - {name: 'Gradle'}
+- {name: 'IntelliJ, VS'}
 
 devops:
 - {name: 'MySQL, PostgreSQL, Oracle, MSSQL, DB2'}
-- {name: 'GitHub, Bitbucket, Jira, Confluence'}
+- {name: 'Git, GitHub, Bitbucket, Jira, Confluence'}
