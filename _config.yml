@@ -2,3 +2,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "정현관`s Portfolio" # the name of your site, e.g. ACME Corp.
 description: "Back-End Engineer"
+
+
+## Site
+#repository: kwan1989/kwan1989.github.io
+#favicon: images/favicon.ico
+#
+## Content configuration version
+#version: 2
+#
+## Personal info
+#name: 정현관
+#email: jhg728@naver.co.kr
+#website: https://github.com/kwan1989
+#
+## Dark Mode (true/false/never)
+#darkmode: true

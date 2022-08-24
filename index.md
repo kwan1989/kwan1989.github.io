@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Index"
+title: "정현관"
 ---
 
 경력 9년차 개발자로 `Java`, `SpringBoot`, `C#`, `.Net`  백엔드서비스 관련 업무를 하고 있습니다.  
