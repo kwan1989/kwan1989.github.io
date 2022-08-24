@@ -1,6 +1,6 @@
 backend:
 - {name: 'Java, C#(.NET)'}
-- {name: 'Spring Boot, Spring MVC, Spring Batch, Spring Data JPA'}
+- {name: 'Spring Boot, Spring MVC, Spring Data JPA'}
 - {name: 'QueryDsl, JUnit, Mock, Elasticsearch'}
 - {name: 'Swagger', 'H2'}
 - {name: 'Gradle'}
