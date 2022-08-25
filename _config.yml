@@ -1,11 +1,11 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog
 title: "정현관`s Portfolio" # the name of your site, e.g. ACME Corp.
 description: "Back-End Engineer"
 
 
 ## Site
-#repository: kwan1989/kwan1989.github.io
+repository: kwan1989/kwan1989.github.io
 #favicon: images/favicon.ico
 #
 ## Content configuration version
@@ -18,3 +18,12 @@ description: "Back-End Engineer"
 #
 ## Dark Mode (true/false/never)
 #darkmode: true
+
+
+# title: Java & NodeJS 백엔드 엔지니어
+#email: jhg728@name.com
+#website: https://jojoldu.tistory.com
+#url: https://jojoldu.tistory.com
+#baseurl: https://jojoldu.tistory.com
+#github_username:  kwan1989
+# dribbble_username: jekyll
