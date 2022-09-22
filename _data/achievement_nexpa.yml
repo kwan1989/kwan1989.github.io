@@ -20,11 +20,11 @@
     * 사내 주차유도 솔루션의 통합 REST 서버 개발
     * 번호인식 비즈니스 로직 구현
     * 등록 되어 있는 클라이언트와 유저만 서버와 통신 가능
-    * Spring Security, JWT, IP Filter
+    * IP Filter
     * 스마트 카메라와의 직접적인 구현
 
 - layout: left
-  name: SKT 주차장별 주차 현황 데이터 Rest 서버(ipgsskttmap)
+  name: SKT 주차장별 주차 현황 데이터 Rest 서버(ipgssktmap)
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     SKTmap 넥스파 주차유도 솔루션과 주차현황 데이터 Rest 서버
