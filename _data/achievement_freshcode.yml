@@ -1,5 +1,5 @@
 - layout: left
-  name: 개발 환경
+  name: <font size="5" color="green">  개발 환경 </font>
   link:
   quote: >
     프로젝트 개발 Version
@@ -10,7 +10,7 @@
     * ECT. : <b>MySQL, H2, JPA, QueryDSL, Swagger3, JUnit5, ElasticSearch</b>
 
 - layout: left
-  name: CLOVER APP 2.0 약관 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 약관 API </font>
   link: https://docs.google.com/document/d/1sH-rZ8tx1Bumj5cnD4jn2XMnrfcvatKpMN1GWE4Tvo0/edit
   quote: >
     프레시코드 약관 API 개발
@@ -20,7 +20,7 @@
     * 약관 노출, 수정, 삭제, 추가, 기간별 설정
 
 - layout: left
-  name: CLOVER APP 2.0 배너 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 배너 API </font>
   link: https://docs.google.com/document/d/1_EBUsjVqVwkAtEqzW1k5JjeZPIyeQhgdZvd-dZ4v_PU/edit
   quote: >
     프레시코드 배너 API 개발
@@ -29,7 +29,7 @@
     * 데이터 베이스 AS-IS 구조 파악 및 TO-BE 구조 설계
 
 - layout: left
-  name: CLOVER APP 2.0 장바구니 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 장바구니 API </font>
   link: https://docs.google.com/document/d/1TKREV3IEqzOzYeoxFXazSo2NWFVPGkKxkEzY86UJqIk/edit
   quote: >
     프레시코드 장바구니 API 개발
@@ -39,7 +39,7 @@
     * 데이터 베이스 AS-IS 구조 파악 및 TO-BE 구조 설계
 
 - layout: left
-  name: CLOVER APP 2.0 매뉴 리뷰 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 매뉴 리뷰 API </font>
   link: https://docs.google.com/document/d/1SnqJCkFjwo_dQjbPdcXmnxi6J9zH_0bSETlAtlc5inc/edit?usp=sharing
   quote: >
     프레시코드 매뉴 리뷰 API 개발
@@ -50,7 +50,7 @@
     * 데이터 베이스 AS-IS 구조 파악 및 TO-BE 구조 설계
 
 - layout: left
-  name: CLOVER APP 2.0 스팟 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 스팟 API </font>
   link:
   quote: >
     프레시코드 스팟 API 개발
@@ -64,7 +64,7 @@
     * 서비스 API JUnit5 적용
 
 - layout: left
-  name: CLOVER APP 2.0 어드민 API
+  name: <font size="5" color="purple"> CLOVER APP 2.0 어드민 API </font>
   link:
   quote: >
     프레시코드 어드민페이지 API 개발
