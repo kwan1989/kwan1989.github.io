@@ -15,5 +15,9 @@
         <p class="fw-bold">{{ include.item.quote }}</p>
         {%- endif -%}
         {{ include.item.description | strip | markdownify }}
+        {%- if include.item.environment -%}
+        <p class="fw-bold">{{ include.item.environment }}</p>
+        {%- endif -%}
+        {{ include.item.version | strip | markdownify }}
     </div>
 </div>
