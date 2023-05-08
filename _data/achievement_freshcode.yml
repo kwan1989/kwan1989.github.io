@@ -1,15 +1,4 @@
 - layout: left
-  name: <font size="5" color="green">  개발 환경 </font>
-  link:
-  quote: >
-    프로젝트 개발 Version
-  description: |
-    * Java Version : <b>Java 15</b>
-    * Spring boot Version : <b>2.4.11.RELEASE</b>
-    * Gradle Version : <b>6.8.3</b>
-    * ECT. : <b>MySQL, H2, JPA, QueryDSL, Swagger3, JUnit5, ElasticSearch</b>
-
-- layout: left
   name: <font size="5" color="purple"> CLOVER APP 2.0 약관 API </font>
   link: https://docs.google.com/document/d/1sH-rZ8tx1Bumj5cnD4jn2XMnrfcvatKpMN1GWE4Tvo0/edit
   quote: >
@@ -73,3 +62,14 @@
     * 스팟 어드민 페이지 개발
     * 유저 어드민 페이지 개발
     * 매뉴 어드민 페이지 개발
+
+- layout: left
+  name: <font size="4" color="green">  개발 환경 </font>
+  link:
+  quote: >
+    프로젝트 개발 Version
+  description: |
+    * Java Version : <b>Java 15</b>
+    * Spring boot Version : <b>2.4.11 RELEASE</b>
+    * Gradle Version : <b>6.8.3</b>
+    * ECT. : <b>Spring MVC, Spring Batch, MySQL, H2, JPA, QueryDSL, Swagger3, JUnit5, ElasticSearch</b>
