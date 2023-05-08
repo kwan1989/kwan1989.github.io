@@ -16,10 +16,10 @@
     * ECT. : <b>Spring Batch, H2, JUnit5, VerticaDB, Mybatis, Kafka, AWS SQS, AWS S3, AWS EC2, MongoDB </b>
 
 - layout: left
-  name: <font size="5" color="red"> 위메프 EP(Engine Page) 데이터 개발 </font> #상품 데이터 아키텍쳐 고도화, PHP → Kotlin / IDC → Cloud
+  name: <font size="5" color="red"> 위메프 EP 데이터 개발 </font> #상품 데이터 아키텍쳐 고도화, PHP → Kotlin / IDC → Cloud
   link: https://docs.google.com/document/d/1SxWf4Iyt_I3tLesZLkq9Ellh3N9twDnk9cozSmDT7BE/edit
   quote: >
-    위메프 상품 데이터 외부로 노출 데이터 개발
+    위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
   description: |
     * 위메프 상품 데이터 (2억~) 외부 노출 데이터 추출
     * 기존 IDC → Cloud 진행
