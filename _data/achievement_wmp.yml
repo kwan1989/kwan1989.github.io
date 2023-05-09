@@ -22,6 +22,7 @@
     위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
   description: |
     * 위메프 상품 데이터 (2억~) 외부 노출 데이터 추출
+    * TF 프로젝트 리딩 역할
     * 기존 IDC → Cloud 진행
     * PHP → Kotlin(전사기술스택 전환)
     * Monolithic → MSA 구조 변경
