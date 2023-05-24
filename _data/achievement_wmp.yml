@@ -1,21 +1,4 @@
 - layout: left
-  name: <font size="5" color="red"> 리뷰 데이터 수집 개발 </font>
-  link: https://docs.google.com/document/d/1FuNHo-KGu3vG5ygOWX_OooXbIamF4tbCQ0Qrvaqz3zI/edit
-  quote: >
-    리뷰 데이터 수집
-  description: |
-    * 제휴사로 부터 리뷰 데이터를 제공받아 통합하여 리뷰를 표출 한다.
-    * 약 2천만건의 리뷰 데이터 수집, 팀내 상품수집 데이터(8~10억건)
-    * 버티카배치 데이터 통합 가공 서버 진행
-  environment: >
-    프로젝트 개발 Version
-  version: |
-    * Java Version : <b>17</b>
-    * Spring boot Version : <b>2.7.6 RELEASE</b>
-    * Gradle Version : <b>7.6</b>
-    * ECT. : <b>Spring Batch, H2, JUnit5, VerticaDB, Mybatis, Kafka, AWS SQS, AWS S3, AWS EC2, MongoDB </b>
-
-- layout: left
   name: <font size="5" color="red"> 위메프 EP 데이터 개발 </font> #상품 데이터 아키텍쳐 고도화, PHP → Kotlin / IDC → Cloud
   link: https://docs.google.com/document/d/1SxWf4Iyt_I3tLesZLkq9Ellh3N9twDnk9cozSmDT7BE/edit
   quote: >
@@ -35,3 +18,20 @@
     * Spring boot Version : <b>3.0.2 RELEASE</b>
     * Gradle Version : <b>7.6</b>
     * ECT. : <b>Spring Batch, JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
+
+- layout: left
+  name: <font size="5" color="red"> 리뷰 데이터 수집 개발 </font>
+  link: https://docs.google.com/document/d/1FuNHo-KGu3vG5ygOWX_OooXbIamF4tbCQ0Qrvaqz3zI/edit
+  quote: >
+    리뷰 데이터 수집
+  description: |
+    * 제휴사로 부터 리뷰 데이터를 제공받아 통합하여 리뷰를 표출 한다.
+    * 약 2천만건의 리뷰 데이터 수집, 팀내 상품수집 데이터(8~10억건)
+    * 버티카배치 데이터 통합 가공 서버 진행
+  environment: >
+    프로젝트 개발 Version
+  version: |
+    * Java Version : <b>17</b>
+    * Spring boot Version : <b>2.7.6 RELEASE</b>
+    * Gradle Version : <b>7.6</b>
+    * ECT. : <b>Spring Batch, H2, JUnit5, VerticaDB, Mybatis, Kafka, AWS SQS, AWS S3, AWS EC2, MongoDB </b>

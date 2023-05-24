@@ -12,3 +12,29 @@ body {
 body a {
   color: $linkColor
 }
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.left-part {
+  grid-column: 1;
+  font-size: 11px;
+}
+
+.right-part {
+  grid-column: 2;
+  font-size: 12px;
+}
+
+.shadowed-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
