@@ -17,7 +17,7 @@
     * Java Version : <b>amazon corretto-11</b>
     * Spring boot Version : <b>2.3.4 RELEASE</b>
     * Gradle Version : <b>6.7.0</b>
-    * ECT. : <b>Spring MVC, Gradle, PostgreSQL, JPA, QueryDSL, JUnit4</b>
+    * ETC. : <b>Spring MVC, Gradle, PostgreSQL, JPA, QueryDSL, JUnit4</b>
 
 - layout: left
   name: <font size="5" color="blue"> SKT 주차장별 주차 현황 데이터 Rest 서버(ipgssktmap) </font>
@@ -33,7 +33,7 @@
     * Java Version : <b>amazon corretto-11</b>
     * Spring boot Version : <b>2.3.4 RELEASE</b>
     * Gradle Version : <b>6.7.0</b>
-    * ECT. : <b>Spring MVC, Gradle, PostgreSQL, Mybatis</b>
+    * ETC. : <b>Spring MVC, Gradle, PostgreSQL, Mybatis</b>
 
 
 - layout: left
@@ -53,7 +53,7 @@
     프로젝트 개발 Version
   version: |
     * .NET Version : <b>3.5</b>
-    * ECT. : <b>C#, Message Comm(Window), PostgreSQL, MSSQL, Oracle, DB2, MultiThread, TCP/UDP Socket, FTP</b>
+    * ETC. : <b>C#, Message Comm(Window), PostgreSQL, MSSQL, Oracle, DB2, MultiThread, TCP/UDP Socket, FTP</b>
 
 - layout: left
   name: <font size="5" color="blue"> VDI 솔루션 개발 </font>
@@ -72,8 +72,8 @@
   version: |
     * .NET Version : <b>3.5</b>
     * Java Version : <b>1.8</b>
-    * ECT. : <b>C#, PostgreSQL, MSSQL, MultiThread, IP Byte Comm.</b>
-    * ECT. : <b>Java, Spring MVC, RSA</b>
+    * ETC. : <b>C#, PostgreSQL, MSSQL, MultiThread, IP Byte Comm.</b>
+    * ETC. : <b>Java, Spring MVC, RSA</b>
 
 - layout: left
   name: <font size="5" color="blue"> NPCloudUploader </font>
@@ -89,7 +89,7 @@
     프로젝트 개발 Version
   version: |
     * .NET Version : <b>3.5</b>
-    * ECT. : <b>C#, PostgreSQL, MSSQL, Oracle Cloud, Oracle Storage</b>
+    * ETC. : <b>C#, PostgreSQL, MSSQL, Oracle Cloud, Oracle Storage</b>
 
 - layout: left
   name: <font size="5" color="blue"> nxLPRTest </font>
@@ -107,7 +107,7 @@
     프로젝트 개발 Version
   version: |
     * .NET Version : <b>3.5</b>
-    * ECT. : <b>C#, OpenCV, MultiThread</b>
+    * ETC. : <b>C#, OpenCV, MultiThread</b>
 
 - layout: left
   name: <font size="5" color="blue"> NPSettingManager </font>
@@ -125,4 +125,4 @@
     프로젝트 개발 Version
   version: |
     * .NET Version : <b>3.5</b>
-    * ECT. : <b>C#, PostgreSQL, WinAPI</b>
+    * ETC. : <b>C#, PostgreSQL, WinAPI</b>
