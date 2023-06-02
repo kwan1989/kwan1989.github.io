@@ -17,7 +17,7 @@
     * Kotlin Version : <b>1.8.0</b>
     * Spring boot Version : <b>3.0.2 RELEASE</b>
     * Gradle Version : <b>7.6</b>
-    * ETC. : <b>Spring Batch, JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
+    * ETC. : <b>JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
 
 - layout: left
   name: <font size="5" color="red"> 리뷰 데이터 수집 개발 </font>
