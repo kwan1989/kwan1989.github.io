@@ -15,7 +15,8 @@ title: "Back-end Engineer"
 [//]: # ()
 [//]: # (ps. 언젠간 크나큰 개발자가 되겠지.)
 
-##### `Java & Spring / C#(.NET)`  백엔드 개발자
+[//]: # (##### `Java & Spring / C#&#40;.NET&#41;`  백엔드 개발자)
+##### `Back-end Engineer`
 #####  장비 제어, 주차유도 솔루션, e-commerce, 
 #####  억단위 데이터 수집 등의 시스템을 개발했습니다.
 
