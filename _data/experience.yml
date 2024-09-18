@@ -1,4 +1,5 @@
 list:
+  - {name: '퍼플아이오',range: '2024. 07 ~ ', department: '신사업개발팀 캠페인스쿼드',work: '코오롱 캠페인 시스템 백엔드 개발(Kotlin)',company: 'https://purple.io/'}
   - {name: '위메프',range: '2022. 10 ~ 2023. 05', department: '플랫폼개발실 데이터수집개발팀',work: '위메프 서비스 데이터수집 백엔드 개발(Java/Kotlin)',company: 'https://www.wemakeprice.com'}
   - {name: '라이픽',range: '2022. 07 ~ 2022. 08 <mark>07.31 사업종료</mark>', department: 'Backend Engineer',work: '라이픽 서비스 백엔드 개발(Java)',company: }
   - {name: '프레시코드',range: '2021. 12 ~ 2022. 06', department: 'Backend Engineer',work: '프레시코드 서비스 백엔드 개발(Java)',company: 'https://www.freshcode.me'}

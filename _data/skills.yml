@@ -1,7 +1,7 @@
 backend:
 - {name: 'Java, Kotlin, C#(.NET)'}
 - {name: 'Spring Boot, Spring MVC, Spring Data JPA, Spring Batch'}
-- {name: 'QueryDsl, Mybatis JUnit, Mock'}
+- {name: 'QueryDsl, Mybatis, JUnit, Mock'}
 - {name: 'Swagger, Elasticsearch, Kakfa'}
 - {name: 'Gradle'}
 - {name: 'IntelliJ, VS'}
