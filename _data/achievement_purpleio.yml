@@ -4,6 +4,7 @@
   quote: >
     코오롱 캠페인 시스템 개발
   description: |
+    * 캠페인 플로우차트 컴포넌트 레벨단의 외부 데이터 연동 컴포넌트 개발
     * 코오롱 고객리스트을 통해 특정군 리스팅 이후 리스팅 선택/병합 하여 히스토리 유지
     * 리스팅 고객 대상으로 채널성 데이터 발송 시스템 개발(SMS, APP PUSH, EMAIL)
     * 리스팅 고객 대상으로 쿠폰 전송
@@ -12,7 +13,7 @@
     프로젝트 개발 Version
   version: |
     * Kotlin Version : <b>2.0.0</b>
-    * Spring boot Version : <b>3.3.0 RELEASE</b>
+    * Spring boot Version : <b>3.3.3 RELEASE</b>
     * Gradle Version : <b>8.6</b>
-    * ETC. : <b>Kotlin, JPA, Kotlin Exposed, R2DBC, QueryDSL, MySQL, Redis, AWS S3, AWS SNS, AWS SQS, AWS Lambda</b>
+    * ETC. : <b>Kotlin, JPA, Kotlin Exposed, R2DBC, QueryDSL, AWS RDS, ElastiCache, S3, SNS, SQS, Lambda(Python)</b>
 

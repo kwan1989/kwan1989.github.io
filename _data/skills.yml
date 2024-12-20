@@ -1,12 +1,15 @@
 backend:
-- {name: 'Java, Kotlin, C#(.NET)'}
-- {name: 'Spring Boot, Spring MVC, Spring Data JPA, Spring Batch'}
+- {name: 'Java, Kotlin, Python, C#(.NET)'}
+- {name: 'Spring Boot'}
 - {name: 'QueryDsl, Mybatis, JUnit, Mock'}
-- {name: 'Swagger, Elasticsearch, Kakfa'}
 - {name: 'Gradle'}
 - {name: 'IntelliJ, VS'}
-- {name: 'AWS, GCP'}
+
 
 devops:
-- {name: 'VerticaDB, MySQL, PostgreSQL, Oracle, MSSQL, DB2', 'H2'}
-- {name: 'Git, GitHub, Bitbucket, Jira, Confluence'}
+- {name: 'VerticaDB, MySQL, PostgreSQL, Oracle, MSSQL, DB2', 'H2', MongoDB, Firestore}
+- {name: 'Redis, Memcached, ElastiCache'}
+- {name: 'Docker, GitLab CI/CD'}
+- {name: 'Elasticsearch, Kafka'}
+- { name: 'AWS, GCP' }
+- {name: 'Git, GitHub, GitLab, Bitbucket'}
