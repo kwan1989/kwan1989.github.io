@@ -12,8 +12,8 @@
   environment: >
     프로젝트 개발 Version
   version: |
-    * Kotlin Version : <b>2.0.0</b>
-    * Spring boot Version : <b>3.3.3 RELEASE</b>
+    * Kotlin Version : <b>1.9.25</b>
+    * Spring boot Version : <b>3.4.2 RELEASE</b>
     * Gradle Version : <b>8.6</b>
     * ETC. : <b>Kotlin, Kotlin Exposed, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
 
