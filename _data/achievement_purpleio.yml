@@ -15,5 +15,5 @@
     * Kotlin Version : <b>2.0.0</b>
     * Spring boot Version : <b>3.3.3 RELEASE</b>
     * Gradle Version : <b>8.6</b>
-    * ETC. : <b>Kotlin, JPA, Kotlin Exposed, R2DBC, QueryDSL, AWS RDS, ElastiCache, S3, SNS, SQS, Lambda(Python)</b>
+    * ETC. : <b>Kotlin, Kotlin Exposed, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
 
