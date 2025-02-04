@@ -1,6 +1,6 @@
 <div class="row g-5 mb-5">
     <div>
-        <h3 class="fw-bold border-bottom pb-3 mb-5">Achievement - 퍼플아이오</h3>
+        <h3 class="fw-bold border-bottom pb-3 mb-5" style="color: purple;">Achievement - 퍼플아이오</h3>
         {% for project in site.data.achievement_purpleio %}
             {% include {{ project.layout | default: 'left' | append: ".html" }} item = project %}
         {% endfor %}

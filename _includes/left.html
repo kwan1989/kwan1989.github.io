@@ -1,22 +1,22 @@
 <div class="row g-5 mb-5">
-    <div class="col-md-5" style="display: flex; align-items: baseline;">
+    <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; width: 100%; text-decoration: underline; font-style: italic;">
         <h4>{{ include.item.name }}</h4>
     </div>
-    <p style="margin-top: 5px;">
+    <p style="display: flex; justify-content: center; align-items: center; margin-top: -5px;">
         {%- if include.item.link -%}
-            <a href="{{ include.item.link }}">[ 프로젝트 상세 ]</a>
+        <a href="{{ include.item.link }}">[ 프로젝트 상세 ]</a>
         {%- endif -%}
         {%- if include.item.github -%}
-            <a href="{{ include.item.github }}">[ Github ]</a>
+        <a href="{{ include.item.github }}">[ Github ]</a>
         {%- endif -%}
     </p>
-    <div class="col-md-10" style="margin-top: 10px;">
+    <div class="col-md-10 " style="margin-top: 10px;">
         {%- if include.item.quote -%}
         <p class="fw-bold">{{ include.item.quote }}</p>
         {%- endif -%}
         {{ include.item.description | strip | markdownify }}
         {%- if include.item.environment -%}
-        <p class="fw-bold">{{ include.item.environment }}</p>
+        <p class="fw-bold ">{{ include.item.environment }}</p>
         {%- endif -%}
         {{ include.item.version | strip | markdownify }}
     </div>

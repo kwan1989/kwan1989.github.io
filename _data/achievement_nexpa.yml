@@ -1,5 +1,5 @@
 - layout: left
-  name: <font size="5" color="blue"> 주차유도 솔루션 클라우드 전환(ipgsrest) </font>
+  name: 주차유도 솔루션 클라우드 전환
   link: https://docs.google.com/presentation/d/1_r6xzHTY85yw_139g1KgtAO6RUK_snhSpDSPQ29cC60/edit?usp=sharing
   quote: >
     주차유도 솔루션 클라우드 전환하면서 스마트 카메라와의 연동 서버 개발
@@ -20,7 +20,7 @@
     * ETC. : <b>Spring MVC, Gradle, PostgreSQL, JPA, QueryDSL, JUnit4</b>
 
 - layout: left
-  name: <font size="5" color="blue"> SKT 주차장별 주차 현황 데이터 Rest 서버(ipgssktmap) </font>
+  name: SKT 주차장별 주차 현황 데이터 서버
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     SKTmap 넥스파 주차유도 솔루션과 주차현황 데이터 서버
@@ -37,7 +37,7 @@
 
 
 - layout: left
-  name: <font size="5" color="blue"> 통합장애알람 솔루션 개발 </font>
+  name: 통합장애알람 솔루션 개발
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     통합장애센터, 장애알람서버, 장애알람클라이언트 개발
@@ -56,7 +56,7 @@
     * ETC. : <b>C#, Message Comm(Window), PostgreSQL, MSSQL, Oracle, DB2, MultiThread, TCP/UDP Socket, FTP</b>
 
 - layout: left
-  name: <font size="5" color="blue"> VDI 솔루션 개발 </font>
+  name: VDI 솔루션 개발
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     롯데정보통신과의 웹개발 서버, VDI 수직방향안내 서버 개발(Vertical Directive Information)
@@ -76,7 +76,7 @@
     * ETC. : <b>Java, Spring MVC, RSA</b>
 
 - layout: left
-  name: <font size="5" color="blue"> NPCloudUploader </font>
+  name: NPCloudUploader
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     데이터베이스 자동 백업 클라우드 업로더
@@ -92,7 +92,7 @@
     * ETC. : <b>C#, PostgreSQL, MSSQL, Oracle Cloud, Oracle Storage</b>
 
 - layout: left
-  name: <font size="5" color="blue"> nxLPRTest </font>
+  name: nxLPRTest
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     번호인식율 로컬 테스트 소프트웨어
@@ -110,7 +110,7 @@
     * ETC. : <b>C#, OpenCV, MultiThread</b>
 
 - layout: left
-  name: <font size="5" color="blue"> NPSettingManager </font>
+  name: NPSettingManager
   link: /projects/정현관_포트폴리오.pdf
   quote: >
     주차유도 솔루션의 반복적인 설치 업무로 인해 자동 설치 및 설정 소프트웨어 개발
