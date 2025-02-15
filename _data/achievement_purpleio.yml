@@ -8,6 +8,7 @@
     * 코오롱 고객리스트을 통해 특정군 리스팅 이후 리스팅 선택/병합 하여 히스토리 유지
     * 리스팅 고객 대상으로 채널성 데이터 발송 시스템 개발(SMS, APP PUSH, EMAIL)
     * 리스팅 고객 대상으로 쿠폰 전송
+    * 'Spring StateMachine' 을 통해 상태 관리 이벤트 처리
     * External(외부) 대용량 요청 서버 개발
   environment: >
     프로젝트 개발 Version
@@ -15,5 +16,5 @@
     * Kotlin Version : <b>1.9.25</b>
     * Spring boot Version : <b>3.4.2 RELEASE</b>
     * Gradle Version : <b>8.6</b>
-    * ETC. : <b>Kotlin, Kotlin Exposed, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
+    * ETC. : <b>Kotlin, Kotlin Exposed, Spring StateMachine, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
 
