@@ -1,55 +1,63 @@
 list:
-  - {
-    name: '퍼플아이오',
-    range: '2024. 07 ~ ',
-    department: '신사업개발팀 캠페인스쿼드',
-    description: 'Backend Engineer',
-    position: '매니저',
-    work: '코오롱 캠페인 시스템 백엔드 개발(Kotlin)',
+  - name: '퍼플아이오'
+    experience:
+      - range: '2024. 07 ~ '
+        department: '신사업개발팀 캠페인스쿼드'
+      - range: '2025. 02 ~ '
+        department: '서비스플랫폼팀 CRM Part (겸직, 통합쿠폰 개발)'
+    description: 'Backend Engineer'
+    position: '매니저'
+    work:
+      - '코오롱 캠페인 시스템 백엔드 개발(Kotlin)'
+      - '코오롱 통합 쿠폰 시스템 백엔드 개발(Kotlin)'
     company: 'https://purple.io/'
-  }
-  - {
-    name: '위메프',
-    range: '2022. 10 ~ 2023. 05',
-    department: '플랫폼개발실 데이터수집개발팀',
-    description: 'Backend Engineer',
-    position: '매니저',
-    work: '위메프 서비스 데이터수집 백엔드 개발(Java/Kotlin)',
+
+  - name: '위메프'
+    experience:
+      - range: '2022. 10 ~ 2023. 05'
+        department: '플랫폼개발실 데이터수집개발팀'
+    description: 'Backend Engineer'
+    position: '매니저'
+    work:
+      - '위메프 서비스 데이터수집 백엔드 개발(Java/Kotlin)'
     company: 'https://www.wemakeprice.com'
-  }
-  - {
-    name: '라이픽',
-    range: '2022. 07 ~ 2022. 08 <mark>07.31 사업종료</mark>',
-    department: '플랫폼개발실',
-    description: 'Backend Engineer',
-    position: '매니저',
-    work: '라이픽 서비스 백엔드 개발(Java)',
+
+  - name: '라이픽'
+    experience:
+      - range: '2022. 07 ~ 2022. 08 <mark>07.31 사업종료</mark>'
+        department: '플랫폼개발실'
+    description: 'Backend Engineer'
+    position: '매니저'
+    work:
+      - '라이픽 서비스 백엔드 개발(Java)'
     company: ''
-  }
-  - {
-    name: '프레시코드',
-    range: '2021. 12 ~ 2022. 06',
-    department: '플랫폼개발실',
-    description: 'Backend Engineer',
-    position: '매니저',
-    work: '프레시코드 서비스 백엔드 개발(Java)',
+
+  - name: '프레시코드'
+    experience:
+      - range: '2021. 12 ~ 2022. 06'
+        department: '플랫폼개발실'
+    description: 'Backend Engineer'
+    position: '매니저'
+    work:
+      - '프레시코드 서비스 백엔드 개발(Java)'
     company: 'https://www.freshcode.me'
-  }
-  - {
-    name: '넥스파시스템',
-    range: '2016. 01 ~ 2021. 12',
-    department: '기업부설연구소',
-    description: 'Software Engineer',
-    position: '전임연구원',
-    work: '주차유도 솔루션 개발(.NET, Java)',
+
+  - name: '넥스파시스템'
+    experience:
+      - range: '2016. 01 ~ 2021. 12'
+        department: '기업부설연구소'
+    description: 'Software Engineer'
+    position: '전임연구원'
+    work:
+      - '주차유도 솔루션 개발(.NET, Java)'
     company: 'http://www.nexpa.co.kr'
-  }
-  - {
-    name: '티엔이테크',
-    range: '2013. 10 ~ 2015. 06',
-    department: '기업부설연구소',
-    description: 'Software Engineer',
-    position: '연구원',
-    work: '계측장비 소프트웨어 개발(C++, C#, VB)',
+
+  - name: '티엔이테크'
+    experience:
+      - range: '2013. 10 ~ 2015. 06'
+        department: '기업부설연구소'
+    description: 'Software Engineer'
+    position: '연구원'
+    work:
+      - '계측장비 소프트웨어 개발(C++, C#, VB)'
     company: 'http://www.tnetech.co.kr'
-  }

@@ -1,25 +1,63 @@
+<!--<div class="row g-5 mb-5">-->
+<!--    <div>-->
+<!--        <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>-->
+<!--        {% for item in site.data.experience.list %}-->
+<!--            <div class="row g-5 mb-5">-->
+
+<!--&lt;!&ndash;                Experience 부분 좌측 회사명 부분 수정은 experience.yml&ndash;&gt;-->
+<!--                <div class="col-md-3">-->
+<!--                    <p><h4>{{ item.name }}</h4></p>-->
+<!--                    <p><i><a href="{{ item.company }}" >{{ item.company }}</a></i></p>-->
+<!--                </div>-->
+
+
+<!--                <div class="col-md-5">-->
+<!--                    <p style="margin-bottom : 0;"><b>기간</b> : {{ item.range }}</p>-->
+<!--                    {%- if item.link -%}<p style="margin-bottom : 0;"><b>내역</b> : <a href="{{ item.link }}">{{ item.link }}</a></p>{%- endif -%}-->
+<!--                    {%- if item.department -%}<p style="margin-bottom : 0;"><b>부서</b> : {{ item.department }}</p>{%- endif -%}-->
+<!--                    {%- if item.description -%}<p style="margin-bottom : 0;"><b>활동</b> : {{ item.description }}</p>{%- endif -%}-->
+<!--                    {%- if item.position -%}<p style="margin-bottom : 0;"><b>직급</b> : {{ item.position }}</p>{%- endif -%}-->
+<!--                    {%- if item.work -%}<p style="margin-bottom : 0;"><b>업무</b> : {{ item.work }}</p>{%- endif -%}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        {% endfor %}-->
+<!--    </div>-->
+<!--</div>-->
+
 <div class="row g-5 mb-5">
     <div>
         <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
         {% for item in site.data.experience.list %}
-            <div class="row g-5 mb-5">
+        <div class="row g-5 mb-5">
 
-<!--                Experience 부분 좌측 회사명 부분 수정은 experience.yml-->
-                <div class="col-md-3">
-                    <p><h4>{{ item.name }}</h4></p>
-                    <p><i><a href="{{ item.company }}" >{{ item.company }}</a></i></p>
-                </div>
-
-<!--                Experience 부분 우측 영역 수정은 experience.yml-->
-                <div class="col-md-5">
-                    <p style="margin-bottom : 0;"><b>기간</b> : {{ item.range }}</p>
-                    {%- if item.link -%}<p style="margin-bottom : 0;"><b>내역</b> : <a href="{{ item.link }}">{{ item.link }}</a></p>{%- endif -%}
-                    {%- if item.department -%}<p style="margin-bottom : 0;"><b>부서</b> : {{ item.department }}</p>{%- endif -%}
-                    {%- if item.description -%}<p style="margin-bottom : 0;"><b>활동</b> : {{ item.description }}</p>{%- endif -%}
-                    {%- if item.position -%}<p style="margin-bottom : 0;"><b>직급</b> : {{ item.position }}</p>{%- endif -%}
-                    {%- if item.work -%}<p style="margin-bottom : 0;"><b>업무</b> : {{ item.work }}</p>{%- endif -%}
-                </div>
+            <!--                Experience 부분 좌측 회사명 부분 수정은 experience.yml-->
+            <div class="col-md-3">
+                <h4>{{ item.name }}</h4>
+                <i><a href="{{ item.company }}">{{ item.company }}</a></i>
             </div>
+
+            <!--                Experience 부분 우측 영역 수정은 experience.yml-->
+            <div class="col-md-5 offset-md-4">
+                {%- for exp in item.experience -%}
+                <p style="margin-bottom: 0;"><b>기간</b> : {{ exp.range }}</p>
+                <p style="margin-bottom: 0;"><b>부서</b> : {{ exp.department }}</p>
+                {%- endfor -%}
+                {%- if item.description -%}
+                <p style="margin-bottom: 0;"><b>활동</b> : {{ item.description }}</p>
+                {%- endif -%}
+                {%- if item.position -%}
+                <p style="margin-bottom: 0;"><b>직급</b> : {{ item.position }}</p>
+                {%- endif -%}
+                {%- if item.work -%}
+                <p style="margin-bottom: 0;"><b>업무</b> :</p>  <!-- 업무 항목 시작 -->
+                <ul>
+                    {%- for work in item.work -%}
+                    <li>{{ work }}</li>  <!-- 각 업무를 리스트로 출력 -->
+                    {%- endfor -%}
+                </ul>
+                {%- endif -%}
+            </div>
+        </div>
         {% endfor %}
     </div>
 </div>
