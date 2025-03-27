@@ -1,8 +1,8 @@
 ---
 layout: index
-title: "Back-end Engineer"
+title: "Software Engineer"
 ---
-##### `Back-End Engineer`
+##### `Software Engineer`
 #####  e-commerce, 장비 제어, 주차유도 솔루션,
 #####  대용량 데이터 수집, 캠페인, 쿠폰등의 시스템을 개발했습니다.
 
