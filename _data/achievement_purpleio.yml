@@ -10,6 +10,7 @@
     * 리스팅 고객 대상으로 쿠폰 전송
     * 'Spring StateMachine' 을 통해 상태 관리 이벤트 처리
     * External(외부) 대용량 요청 서버 개발
+    * Hexagonal Architecture
   environment: >
     프로젝트 개발 Version
   version: |
