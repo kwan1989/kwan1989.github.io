@@ -19,3 +19,20 @@
     * Gradle Version : <b>8.6</b>
     * ETC. : <b>Kotlin, Kotlin Exposed, Spring StateMachine, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
 
+- layout: left
+  name: 코오롱 오퍼허브 통합 쿠폰서비스 개발
+#  link: https://docs.google.com/document/d/1o68EzzWFxddNl5-8XGER87Zr-cx7IudiQw51SIvkQSk/edit?tab=t.0
+  quote: >
+    코오롱 오퍼허브 통합 쿠폰서비스 개발
+  description: |
+    * 온/오프라인 통합 쿠폰/포인트 허브 개발
+    * 쿠폰 Core 서버로서 다양한 채널(웹, 앱, 오프라인)에서 쿠폰/포인트 발행, 조회, 사용, 취소, 이력 관리
+    * 타겟팅 유저 분석 데이터 수집(캠페인 연동)
+  environment: >
+    프로젝트 개발 Version
+  version: |
+    * Kotlin Version : <b>1.9.25</b>
+    * Spring boot Version : <b>3.4.2 RELEASE</b>
+    * Gradle Version : <b>8.6</b>
+    * ETC. : <b>Kotlin, Spring Data(JPA, JDBC, Redis), Spring Cache, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3)</b>
+
