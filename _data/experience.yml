@@ -10,7 +10,7 @@ list:
     work:
       - '코오롱 캠페인 시스템 백엔드 개발(Kotlin)'
       - '코오롱 통합 쿠폰 시스템 백엔드 개발(Kotlin)'
-    company: 'https://purple.io/'
+    company: 'https://purple.io'
 
   - name: '위메프'
     experience:
@@ -20,17 +20,17 @@ list:
     position: '매니저'
     work:
       - '위메프 서비스 데이터수집 백엔드 개발(Java/Kotlin)'
-    company: 'https://www.wemakeprice.com'
+    company: 'https://company.wemakeprice.com'
 
   - name: '라이픽'
     experience:
-      - range: '2022. 07 ~ 2022. 08 <mark>07.31 사업종료</mark>'
+      - range: '2022. 07 ~ 2022. 08'
         department: '플랫폼개발실'
     description: 'Backend Engineer'
     position: '매니저'
     work:
       - '라이픽 서비스 백엔드 개발(Java)'
-    company: ''
+    company: <mark>07.31 사업종료</mark>
 
   - name: '프레시코드'
     experience:

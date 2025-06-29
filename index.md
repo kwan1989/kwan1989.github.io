@@ -12,11 +12,10 @@ title: "Software Engineer"
 ######  즐겁게 일하는 사람, 함께 일하고 싶은 사람이 되고 싶습니다.
 
 <br>
-    <span style="color:white; font-size:50%; background-color:darkcyan; font-size:80%">
+    <span style="color:white; background-color:darkcyan; font-size:80%">
         <i>
-            ps. 컴퓨터는 저보다 일을 잘합니다.<br/>
-            <span style="padding-left: 20px;">자동화할 수 있는 건 만들어 사용하고 싶어요.</span><br/>
-            <span style="padding-left: 20px;">언젠간 크나큰 개발자가 되겠지.</span>
+            ps. 컴퓨터가 대신할 수 있는 일은 모두 자동화하고,<br/>
+            <span style="padding-left: 20px;">사람만이 할 수 있는 고민과 협업에 더 많은 시간을 쓰고 싶습니다.</span><br/>
         </i>
     </span>
 
