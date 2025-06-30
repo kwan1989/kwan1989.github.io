@@ -1,8 +1,8 @@
 - layout: left
   name: 프레시코드 서비스 CLOVER</font>
   link: https://docs.google.com/document/d/1sH-rZ8tx1Bumj5cnD4jn2XMnrfcvatKpMN1GWE4Tvo0/edit?tab=t.0
-  quote: >
-    프레시코드 서비스 CLOVER
+#  quote: >
+#    프레시코드 서비스 CLOVER
   description: |
     * 데이터 베이스 AS-IS 구조 파악 및 TO-BE 구조 설계
     * 로그인 유저별 장바구니 조회/추가/삭제/변경
@@ -12,8 +12,23 @@
     * 근처의 스팟, 신규, 역세권, 이벤트 스팟
     * 서비스 API JUnit5 적용
     * 배송, 스팟, 유저, 매뉴 어드민 페이지 개발
-  environment: >
-    프로젝트 개발 Version
+
+  achievements: |
+    * 기존 서버사이드 렌더링 구조에서 프론트/백엔드 분리 아키텍처로 전환 (응답시간 30% 개선)
+    * 도메인 모델 재설계를 통한 기술부채 해소 및 도메인 효율성 40% 향상
+    * JUnit5를 활용한 테스트 코드 커버리지 80% 달성
+    * QueryDSL 적용으로 동적 쿼리 처리 및 타입 안정성 확보
+    * Swagger3 도입으로 API 문서 자동화 및 협업 효율성 증대
+
+  troubleshooting: |
+    * ElasticSearch 도입으로 스팟 도메인 위도/경도 좌표 기반 직선거리 계산 구현 (검색 성능 50% 개선)
+    * Redis 분산 락 적용을 통한 장바구니 물품 수량 동시성 제어
+    * Redis 캐시 적용으로 반복 조회 데이터 응답속도 개선
+    
+  
+  
+  #  environment: >
+#    프로젝트 개발 Version
   version: |
     * Java Version : <b>11</b>
     * Spring boot Version : <b>2.4.11 RELEASE</b>

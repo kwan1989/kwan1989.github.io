@@ -1,35 +1,67 @@
 - layout: left
-  name: 위메프 EP 데이터 개발
+  name: 위메프 EP(Engine Page) 데이터 개발
   link: https://docs.google.com/document/d/1SxWf4Iyt_I3tLesZLkq9Ellh3N9twDnk9cozSmDT7BE/edit
-  quote: >
-    위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
+#  quote: >
+#    위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
   description: |
-    * 위메프 상품 데이터 (2억~) 외부 노출 데이터 추출
-    * TF 프로젝트 리딩 역할
-    * 기존 IDC → Cloud 진행
-    * PHP → Kotlin(전사기술스택 전환)
-    * Monolithic → MSA 구조 변경
-    * 스트리밍 아키텍쳐 
-    * GCP 플랫폼 전환
-  environment: >
-    프로젝트 개발 Version
+    * 위메프 상품 데이터 (2억~) 외부 노출 데이터 추출 및 가공
+    * CDC 기반 실시간 데이터 ETL 프로세스 구축 
+    * Legacy PHP 시스템을 Kotlin 으로 전환
+    * Monolithic 시스템을 MSA 기반으로 재설계
+    * GCP Cloud Native 아키텍처 도입
+  
+  achievements: |
+    * 상품 데이터 처리 시간 70% 단축 (12시간 -> 4시간)
+    * 시스템 안정성 향상 (장애 발생률 90% 감소)
+    * 운영 비용 절감 (IDC 대비 30% 비용 절감)
+    * 실시간 데이터 연동으로 데이터 정합성 향상
+    * MSA 구조 도입으로 서비스 배포 주기 단축
+
+  troubleshooting: |
+    * 대용량 데이터 처리 시 발생하는 OOM 이슈
+      - Batch Size 조정 및 메모리 모니터링 체계 구축
+    * Legacy 시스템 마이그레이션 과정의 데이터 정합성 이슈 
+      - 단계별 마이그레이션 전략 수립
+      - 데이터 검증 프로세스 구축
+    * 실시간 데이터 처리 시 장애 대응
+      - GCP Pub/Sub 기반 비동기 파일 I/O 처리로 성능 개선
+      - Debezium CDC 이벤트 Kafka 스트림 적재 후 장애 복구 시 재전송
+
   version: |
     * Kotlin Version : <b>1.8.0</b>
     * Spring boot Version : <b>3.0.2 RELEASE</b>
     * Gradle Version : <b>7.6</b>
     * ETC. : <b>JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
-
 - layout: left
   name: 리뷰 데이터 수집 개발
   link: https://docs.google.com/document/d/1FuNHo-KGu3vG5ygOWX_OooXbIamF4tbCQ0Qrvaqz3zI/edit
-  quote: >
-    리뷰 데이터 수집
+#  quote: >
+#    리뷰 데이터 수집
   description: |
-    * 제휴사로 부터 리뷰 데이터를 제공받아 통합하여 리뷰를 표출 한다.
-    * 약 2천만건의 리뷰 데이터 수집, 팀내 상품수집 데이터(8~10억건)
-    * 버티카배치 데이터 통합 가공 서버 진행
-  environment: >
-    프로젝트 개발 Version
+    * 제휴사로 부터 리뷰 데이터를 제공받아 통합하여 리뷰를 표출
+    * 약 3000만건의 리뷰 데이터 수집, 가공 처리 및 리뷰 노출 진행
+
+  achievements: |
+    * 리뷰 데이터 정합성 향상 및 안정성 개선
+      - 제휴사별 커스텀 File Parser 구현 및 유효성 검사로 데이터 정확도 향상
+      - 필드별 데이터 타입 및 범위 검증 로직 추가
+    * 데이터 처리 성능 최적화
+      - VerticaDB 기반 필터링된 최종 데이터만 Kafka 프로듀싱 
+      - Hudi CDC 프로세스 제거로 Load 성능 20% 이상 향상 
+      - MongoDB 직접 질의 제거로 부하 40% 이상 감소
+    * 초기 200만건에서 3000만건으로 안정적 확장
+
+  troubleshooting: |
+    * 이미지 데이터 처리 시 병목 현상
+      - Lambda를 활용한 비동기 이미지 처리로 전환
+      - S3 업로드 → Lambda 트리거 → 이미지 리사이징/압축
+    * 이벤트 실패 데이터에 의한 DLQ 컨슈머 처리방안 
+      - DLQ 에 쌓인 이벤트를 재처리하는 별도의 배치 프로세스 구현
+      - 실패 이벤트에 대한 상세 로깅 및 모니터링 체계 구축
+    * MongoDB 를 사용한 기존 수집, 삭제 처리 과정에서 발생하는 부하 문제
+      - VerticaDB 컬럼형 DB로 전환하여 최종 데이터만 Kafka 프로듀싱
+
+#    프로젝트 개발 Version
   version: |
     * Java Version : <b>17</b>
     * Spring boot Version : <b>2.7.6 RELEASE</b>

@@ -1,23 +1,41 @@
+<!-- _includes/left.html -->
 <div class="row g-5 mb-5">
     <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; width: 100%; text-decoration: underline; font-style: italic;">
-        <h4>{{ include.item.name }}</h4>
+    <h4>{{ include.item.name }}</h4>          <!-- YAML의 name 필드 -->
     </div>
     <p style="display: flex; justify-content: center; align-items: center; margin-top: -5px;">
-        {%- if include.item.link -%}
-        <a href="{{ include.item.link }}">[ 프로젝트 상세 ]</a>
-        {%- endif -%}
-        {%- if include.item.github -%}
-        <a href="{{ include.item.github }}">[ Github ]</a>
+    {%- if include.item.link -%}
+        <a href="{{ include.item.link }}">[ 프로젝트 상세 ]</a>  <!-- YAML의 link 필드 -->
         {%- endif -%}
     </p>
     <div class="col-md-10 " style="margin-top: 10px;">
-        {%- if include.item.quote -%}
-        <p class="fw-bold">{{ include.item.quote }}</p>
-        {%- endif -%}
+<!--        {%- if include.item.quote -%}-->
+<!--        <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 프로젝트</h5>  &lt;!&ndash; YAML의 quote 필드 &ndash;&gt;-->
+<!--        {{ include.item.quote }}-->
+<!--        {%- endif -%}-->
+
+        {%- if include.item.description -%}
+        <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>  <!-- YAML의 quote 필드 -->
         {{ include.item.description | strip | markdownify }}
-        {%- if include.item.environment -%}
-        <p class="fw-bold ">{{ include.item.environment }}</p>
         {%- endif -%}
-        {{ include.item.version | strip | markdownify }}
+
+<!--        {{ include.item.description | strip | markdownify }}  &lt;!&ndash; YAML의 description 필드 &ndash;&gt;-->
+
+        {%- if include.item.achievements -%}
+        <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+        {{ include.item.achievements | strip | markdownify }}
+        {%- endif -%}
+
+        {%- if include.item.troubleshooting -%}
+        <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+        {{ include.item.troubleshooting | strip | markdownify }}
+        {%- endif -%}
+
+        {%- if include.item.version -%}
+        <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+        {{ include.item.version | strip | markdownify }}      <!-- YAML의 version 필드 -->
+        {%- endif -%}
+
+
     </div>
 </div>

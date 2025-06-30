@@ -1,8 +1,8 @@
 - layout: left
   name: 코오롱 캠페인 시스템 개발
   link: https://docs.google.com/document/d/1o68EzzWFxddNl5-8XGER87Zr-cx7IudiQw51SIvkQSk/edit?tab=t.0
-  quote: >
-    코오롱 캠페인 시스템 개발
+#  quote: |
+#    코오롱 캠페인 시스템 개발
   description: |
     * 캠페인 플로우차트 컴포넌트 레벨단의 외부 데이터 연동 컴포넌트 개발
     * 코오롱 고객리스트을 통해 특정군 리스팅 이후 리스팅 선택/병합 하여 히스토리 유지
@@ -11,8 +11,30 @@
     * 'Spring StateMachine' 을 통해 상태 관리 이벤트 처리
     * External(외부) 대용량 요청 서버 개발
     * Hexagonal Architecture
-  environment: >
-    프로젝트 개발 Version
+  achievements: |
+    * **시스템 전환**: <b>IBM 유니카 → 자체 개발 시스템 마이그레이션</b>
+    * **대용량 처리**: <b>천만+ 고객 타겟팅, 일일 100만건+ 처리</b>
+    * **비동기 병렬 처리**: <b>다채널 동시 발송 아키텍처 구현</b>
+    * **발송 성능**: <b>SMS/EMAIL/PUSH/쿠폰 99.5% 성공률</b>
+    * **처리 속도**: <b>대용량 캠페인 10분 이내 완료</b>
+    * **응답 성능**: <b>평균 200ms 이하 유지</b>
+    * **운영 효율**: <b>캠페인 설정 시간 80% 단축</b>
+  troubleshooting: |
+    * **대용량 채널 발송 시 TPS 급증 문제**
+      - 문제: SNS→SQS→Lambda Consumer 구조에서 1만건 페이로드를 500개씩 20번 호출 시 회원서비스 TPS 급증
+      - 해결: Lambda Invoke 속도 제어 및 배치 처리 최적화로 외부 API 부하 분산
+    * **캠페인 상태 관리 복잡성**
+      - 문제: 복잡한 캠페인 플로우에서 상태 불일치 및 관리 어려움
+      - 해결: Spring StateMachine 도입으로 상태 관리 체계화 및 이벤트 기반 처리
+    * **대용량 데이터 처리 성능 최적화**
+      - 문제: 동기식 DB 처리로 인한 성능 병목 및 동시성 이슈
+      - 해결1: 임시테이블 활용으로 DB 동시성과 읽기 성능 분리
+      - 해결2: Kotlin Coroutines Flow + R2DBC를 통한 비동기 논블로킹 처리로 성능 향상
+    * **동적 쿼리 복잡성 해결**
+      - 문제: 다양한 조건의 동적 쿼리 작성 및 유지보수의 어려움
+      - 해결: Kotlin Exposed 을 활용한 동적 쿼리 구현
+#  environment: >
+#    프로젝트 개발 Version
   version: |
     * Kotlin Version : <b>1.9.25</b>
     * Spring boot Version : <b>3.4.2 RELEASE</b>
@@ -22,17 +44,36 @@
 - layout: left
   name: 코오롱 오퍼허브 통합 쿠폰서비스 개발
 #  link: https://docs.google.com/document/d/1o68EzzWFxddNl5-8XGER87Zr-cx7IudiQw51SIvkQSk/edit?tab=t.0
-  quote: >
-    코오롱 오퍼허브 통합 쿠폰서비스 개발
+#  quote: >
+#    코오롱 오퍼허브 통합 쿠폰서비스 개발
   description: |
     * 온/오프라인 통합 쿠폰/포인트 허브 개발
     * 쿠폰 Core 서버로서 다양한 채널(웹, 앱, 오프라인)에서 쿠폰/포인트 발행, 조회, 사용, 취소, 이력 관리
     * 타겟팅 유저 분석 데이터 수집(캠페인 연동)
-  environment: >
-    프로젝트 개발 Version
+  achievements: |
+    * **통합 쿠폰 허브 구축**: <b>다양한 발행처를 하나의 통합 허브로 통합</b>
+    * **레거시 시스템 현대화**: <b>기존 ETL 구조 → REST API 방식 전환</b>
+    * **쿠폰 시스템 정규화**: <b>코오롱 내 산재된 쿠폰 시스템 통합 및 표준화</b>
+    * **캐시 기반 응답 향상**:
+      - Server-to-Server 응답: <b>800ms → 150ms (5.3배 향상)</b>
+      - 마이페이지 로딩: <b>2.5초 → 500ms (5배 향상)</b>
+    * **대량 발행 처리**: <b>일일 100만장+ 쿠폰 발행 가능</b>
+    * **분석 데이터 생성**: <b>유저 트래킹 및 분석용 집계 데이터 자동 발행</b>
+    * **시스템 안정성**: <b>중복 발행 오류율 0.01% 이하</b>
+  troubleshooting: |
+    * **쿠폰 중복 발행 동시성 이슈**
+      - 문제: 동시 요청 시 동일 쿠폰 중복 발행 및 재고 부족 상황 처리
+      - 해결: Redis 캐시 기반 분산 락과 동시성 제어 메커니즘 구현
+    * **대용량 캠페인 발행 성능 최적화**
+      - 문제: 캠페인을 통한 대용량 쿠폰 발행 시 DB 부하 및 처리 지연
+      - 해결: Server-to-Server 대용량 파일 기반 코루틴 플로우 + R2DBC 비동기 처리
+    * **온/오프라인 채널 통합 복잡성**
+      - 문제: 웹/앱/오프라인 채널별 상이한 API 규격 및 데이터 처리 방식
+      - 해결: 통합 허브 구축을 통한 공통 API 규격화 및 채널별 어댑터 패턴 적용
+#  environment: >
+#    프로젝트 개발 Version
   version: |
     * Kotlin Version : <b>1.9.25</b>
     * Spring boot Version : <b>3.4.2 RELEASE</b>
     * Gradle Version : <b>8.6</b>
     * ETC. : <b>Kotlin, Spring Data(JPA, JDBC, Redis), Spring Cache, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3)</b>
-

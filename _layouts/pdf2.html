@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ko' }}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
+    <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/css/sub.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
+    <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* PDF 출력을 위한 스타일 */
+        .grid-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .left-part {
+            flex: 1;
+            margin-left: 30px;
+        }
+        .right-part {
+            flex: 1;
+        }
+        .left-part p,
+        .right-part p {
+            margin: 0;
+            padding: 0;
+        }
+        .h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+        .right-part {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media print {
+            .page-break {
+                page-break-before: always;
+                margin-top: 0px;
+            }
+            .no-print {
+                display: none !important;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+    <!-- header -->
+    <header class="d-flex flex-column flex-md-row align-items-center pb-0 mb-3 border-bottom">
+        <div>
+            <span class="fs-4 fw-bold d-block">정현관`s Portfolio</span>
+            <span class="d-block">Software Engineer</span>
+        </div>
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto no-print"></nav>
+    </header>
+
+    <!-- 자기소개 -->
+    <div class="row g-0 mb-0">
+        <div class="col-12">
+            <h3 class="fw-bold">About Me</h3>
+
+            <div class="col-12">
+                <img style="border-radius: 10px;" src="{{ site.github.url }}/assets/img/gitio_new.jpeg" alt="Home" width="35%" align="right">
+            </div>
+
+            <h5 id="software-engineer"><code class="language-plaintext highlighter-rouge">Software Engineer</code></h5>
+            <h6 id="e-commerce-장비-제어-주차유도-솔루션">e-commerce, 장비 제어, 주차유도 솔루션,</h6>
+            <h6 id="대용량-데이터-수집-캠페인등의-시스템을-개발했습니다">대용량 데이터 수집, 캠페인, 쿠폰등의 시스템을 개발했습니다.</h6>
+
+            <h6 id="-일이-왜-필요한지를-생각하고"><br/> 일이 '왜' 필요한지를 생각하고,</h6>
+            <h6 id="쉬운-길-보다는-올바른-길을-가려고-노력합니다">쉬운 길 보다는 올바른 길을 가려고 노력합니다.</h6>
+            <h6 id="공유와-협업을-중요시하며-회고를-즐기고-있습니다">공유와 협업을 중요시하며 회고를 즐기고 있습니다.</h6>
+            <h6 id="즐겁게-일하는-사람-함께-일하고-싶은-사람이-되고-싶습니다">즐겁게 일하는 사람, 함께 일하고 싶은 사람이 되고 싶습니다.</h6>
+
+            <p style="margin-top: 20px;">
+                <span style="color:white; background-color:darkcyan; font-size:80%">
+                    <i>
+                        ps. 컴퓨터가 대신할 수 있는 일은 모두 자동화하고,<br/>
+                        <span style="padding-left: 20px;">사람만이 할 수 있는 고민과 협업에 더 많은 시간을 쓰고 싶습니다.</span><br/>
+                    </i>
+                </span>
+            </p>
+
+            <h6 id="portfolio"><code class="language-plaintext highlighter-rouge">Portfolio(Detail)</code></h6>
+            <ul>
+                <li><a href="https://kwan1989.github.io"><em>https://kwan1989.github.io</em></a></li>
+            </ul>
+
+            <h6 id="github"><code class="language-plaintext highlighter-rouge">Github</code></h6>
+            <ul>
+                <li><a href="https://github.com/kwan1989"><em>https://github.com/kwan1989</em></a></li>
+            </ul>
+
+            <h6 id="linkedin"><code class="language-plaintext highlighter-rouge">Linkedin</code></h6>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kwan1989"><em>https://www.linkedin.com/in/kwan1989</em></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 경험 -->
+    <h3 class="fw-bold border-bottom pb-0 mb-2">Experience</h3>
+
+    {% for exp in site.data.experience.list %}
+    <div class="row g-1 mb-0">
+        <div class="grid-container">
+            <div class="left-part">
+                <p><b><h5>{{ exp.name }}</h5></b></p>
+                {% if exp.company contains 'http' %}
+                    <p><i><a href="{{ exp.company }}">{{ exp.company }}</a></i></p>
+                {% elsif exp.company contains 'mark>' %}
+                    <p class="shadowed-text">{{ exp.company }}</p>
+                {% else %}
+                    <p><i>{{ exp.company }}</i></p>
+                {% endif %}
+            </div>
+            <div class="right-part">
+                {% for experience in exp.experience %}
+                    <p><b>기간</b> : {{ experience.range }}</p>
+                    <p><b>부서</b> : {{ experience.department }}</p>
+                {% endfor %}
+                <p><b>업무</b> : 
+                    {% for work in exp.work %}
+                        {{ work }}{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 퍼플아이오 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
+    
+    {% for project in site.data.achievement_purpleio %}
+    <div class="row g-1 mb-5">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+<!--    <div class="page-break"></div>-->
+    {% endfor %}
+
+    <!-- 주요 성과 - 위메프 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red;">Achievement - 위메프</h3>
+    
+    {% for project in site.data.achievement_wmp %}
+    <div class="row g-1 mb-5">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="page-break"></div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 프레시코드 -->
+<!--    <div class="page-break"></div>-->
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: green;">Achievement - FreshCode</h3>
+    
+    {% for project in site.data.achievement_freshcode %}
+    <div class="row g-1 mb-3">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 넥스파시스템 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: blue;">Achievement - Nexpa System</h3>
+    
+    {% for project in site.data.achievement_nexpa %}
+    <div class="row g-1 mb-3">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+
+</div>
+</body>
+</html>
