@@ -44,7 +44,7 @@
         @media print {
             .page-break {
                 page-break-before: always;
-                margin-top: 0px;
+                margin-top: 0;
             }
             .no-print {
                 display: none !important;
@@ -57,6 +57,13 @@
                 -webkit-print-color-adjust: exact !important;
                 color-adjust: exact !important;
             }
+
+            /*!* 페이지 브레이크 후 첫 번째 요소의 상단 여백 제거 *!*/
+            /*.page-break + h3 {*/
+            /*    margin-top: 0 !important;*/
+            /*    padding-top: 0 !important;*/
+            /*}*/
+
         }
     </style>
 </head>
@@ -149,7 +156,7 @@
     <!-- 주요 성과 - 퍼플아이오 -->
     <div class="page-break"></div>
     <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
-    
+
     {% for project in site.data.achievement_purpleio %}
     <div class="row g-1 mb-5">
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
@@ -161,30 +168,33 @@
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
             {{ project.description | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.achievements %}
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             {{ project.achievements | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.troubleshooting %}
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             {{ project.troubleshooting | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.version %}
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             {{ project.version | strip | markdownify }}
             {% endif %}
         </div>
     </div>
-<!--    <div class="page-break"></div>-->
+
+    {% unless forloop.last %}
+    <div class="page-break"></div>
+    {% endunless %}
     {% endfor %}
 
-    <!-- 주요 성과 - 위메프 -->
+
     <div class="page-break"></div>
-    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red;">Achievement - 위메프</h3>
-    
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red; margin-top: 0 !important; padding-top: 0 !important;">Achievement - 위메프</h3>
+
     {% for project in site.data.achievement_wmp %}
     <div class="row g-1 mb-5">
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
@@ -196,28 +206,31 @@
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
             {{ project.description | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.achievements %}
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             {{ project.achievements | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.troubleshooting %}
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             {{ project.troubleshooting | strip | markdownify }}
             {% endif %}
-            
+
             {% if project.version %}
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             {{ project.version | strip | markdownify }}
             {% endif %}
         </div>
     </div>
+
+    {% unless forloop.last %}
     <div class="page-break"></div>
+    {% endunless %}
     {% endfor %}
 
     <!-- 주요 성과 - 프레시코드 -->
-<!--    <div class="page-break"></div>-->
+    <div class="page-break"></div>
     <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: green;">Achievement - FreshCode</h3>
     
     {% for project in site.data.achievement_freshcode %}
