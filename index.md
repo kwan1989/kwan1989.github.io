@@ -22,5 +22,9 @@ title: "Software Engineer"
 #### `Github`
 * <a href="https://github.com/kwan1989">_https://github.com/kwan1989_</a>
 
+#### `Email`
+* <a href="jhg728@naver.com">_jhg728@naver.com_</a>
+
 #### `Linkedin`
 * <a href="https://www.linkedin.com/in/kwan1989">_https://www.linkedin.com/in/kwan1989_</a>
+
