@@ -2,7 +2,9 @@
 layout: index
 title: "Software Engineer"
 ---
-##### `Software Engineer`
+
+<br>
+
 #####  e-commerce, 장비 제어, 주차유도 솔루션,
 #####  대용량 데이터 수집, 캠페인, 쿠폰등의 시스템을 개발했습니다.
 
@@ -19,12 +21,16 @@ title: "Software Engineer"
         </i>
     </span>
 
-#### `Github`
+##### `Github`
 * <a href="https://github.com/kwan1989">_https://github.com/kwan1989_</a>
 
-#### `Email`
+##### `Email`
 * <a href="jhg728@naver.com">_jhg728@naver.com_</a>
 
-#### `Linkedin`
+##### `Phone`
+
+* _010-9724-0728_
+
+##### `Linkedin`
 * <a href="https://www.linkedin.com/in/kwan1989">_https://www.linkedin.com/in/kwan1989_</a>
 
