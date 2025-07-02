@@ -30,7 +30,7 @@ list:
     position: '매니저'
     work:
       - '라이픽 서비스 백엔드 개발(Java)'
-    company: <mark>07.31 사업종료</mark>
+    company: <mark>서비스 종료</mark>
 
   - name: '프레시코드'
     experience:
