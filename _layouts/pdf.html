@@ -1,17 +1,72 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="{{ site.lang | default: 'ko' }}">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Software Engineer | 정현관`s Portfolio</title>
-    <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
-    <script defer src="/assets/libs/fontawesome/all.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/sub.css">
-<!--    <link rel="stylesheet" href="/assets/css/sub.scss">-->
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
+<!--    <title>{{ page.title }} {{ site.title }}</title>-->
+    <title>{{ page.title }}_{{ site.title | split: '(' | first | replace: ' ', '' }}</title>
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
+    <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/css/sub.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
+    <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* PDF 출력을 위한 스타일 */
+        .grid-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .left-part {
+            flex: 1;
+            margin-left: 30px;
+        }
+        .right-part {
+            flex: 1;
+        }
+        .left-part p,
+        .right-part p {
+            margin: 0;
+            padding: 0;
+        }
+        .h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+        }
+        .right-part {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media print {
+            .page-break {
+                page-break-before: always;
+                margin-top: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            /*!* 페이지 브레이크 후 첫 번째 요소의 상단 여백 제거 *!*/
+            /*.page-break + h3 {*/
+            /*    margin-top: 0 !important;*/
+            /*    padding-top: 0 !important;*/
+            /*}*/
+
+        }
+    </style>
 </head>
 <body>
 <div class="col-lg-8 mx-auto p-3 py-md-5">
@@ -21,25 +76,24 @@
             <span class="fs-4 fw-bold d-block">정현관 포트폴리오</span>
             <span class="d-block">Software Engineer</span>
         </div>
-        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"></nav>
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto no-print"></nav>
     </header>
-
+    
 
     <!-- 자기소개 -->
     <div class="row g-0 mb-0">
         <div class="col-12">
-
             <h3 class="fw-bold">About Me</h3>
 
             <div class="col-12">
-                <img style="border-radius: 10px;" src="/assets/img/gitio_new.jpeg" alt="Home" width="35%" align="right">
+                <img style="border-radius: 10px;" src="{{ site.github.url }}/assets/img/gitio_new.jpeg" alt="Home" width="35%" align="right">
             </div>
 
-            <h5 id="Back--End-Engineer"><code class="language-plaintext highlighter-rouge">Software Engineer</code></h5>
+            <h5 id="software-engineer"><code class="language-plaintext highlighter-rouge">Software Engineer</code></h5>
             <h6 id="e-commerce-장비-제어-주차유도-솔루션">e-commerce, 장비 제어, 주차유도 솔루션,</h6>
             <h6 id="대용량-데이터-수집-캠페인등의-시스템을-개발했습니다">대용량 데이터 수집, 캠페인, 쿠폰등의 시스템을 개발했습니다.</h6>
 
-            <h6 id="-일이-왜-필요한지를-생각하고"><br/> 일이 ‘왜’ 필요한지를 생각하고,</h6>
+            <h6 id="-일이-왜-필요한지를-생각하고"><br/> 일이 '왜' 필요한지를 생각하고,</h6>
             <h6 id="쉬운-길-보다는-올바른-길을-가려고-노력합니다">쉬운 길 보다는 올바른 길을 가려고 노력합니다.</h6>
             <h6 id="공유와-협업을-중요시하며-회고를-즐기고-있습니다">공유와 협업을 중요시하며 회고를 즐기고 있습니다.</h6>
             <h6 id="즐겁게-일하는-사람-함께-일하고-싶은-사람이-되고-싶습니다">즐겁게 일하는 사람, 함께 일하고 싶은 사람이 되고 싶습니다.</h6>
@@ -67,311 +121,198 @@
             <ul>
                 <li><a href="jhg728@naver.com"><em>jhg728@naver.com</em></a></li>
             </ul>
-
         </div>
+    </div>
 
-        <style>
-            .grid-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start; /* 수직 정렬을 위쪽으로 맞춤 */
-                margin-bottom: 10px; /* 간격 조정 */
-            }
-            .left-part {
-                flex: 1; /* 왼쪽 부분이 동일한 너비를 가지도록 설정 */
-                margin-left: 30px; /* 왼쪽 여백 추가 (원하는 값으로 조정 가능) */
-            }
-            .right-part {
-                flex: 1; /* 각 부분이 동일한 너비를 가지도록 설정 */
-            }
-            .left-part p,
-            .right-part p {
-                margin: 0; /* 기본 margin 제거 */
-                padding: 0; /* 기본 padding 제거 */
-            }
-            .h3, h4, h5, h6 {
-                margin: 0; /* 제목 태그의 기본 마진 제거 */
-                padding: 0; /* 제목 태그의 기본 패딩 제거 */
-            }
-            .right-part {
-                display: flex;
-                flex-direction: column; /* 세로로 정렬 */
-            }
-        </style>
+    <!-- 경험 -->
+    <h3 class="fw-bold border-bottom pb-0 mb-2">Experience</h3>
 
-        <style>
-            @media print {
-                .page-break {
-                    page-break-before: always; /* 페이지 나누기 */
-                    margin-top: 0px; /* 위쪽 여백 추가 (선택 사항) */
-                }
-            }
-        </style>
-
-        <!-- 경험 -->
-        <h3 class="fw-bold border-bottom pb-0 mb-2">Experience</h3>
-
-        <div class="row g-1 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>퍼플아이오</h5></b></p>
-                    <p><i><a href="https://purple.io">https://purple.io</a></i></p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2024. 07 ~ </p>
-                    <p><b>부서</b> : 신규개발팀 캠페인스쿼드, 서비스플랫폼팀 CRM Part(겸직)</p>
-                    <p><b>업무</b> : 코오롱 캠페인 시스템 백엔드 개발, 통합쿠폰서비스 개발</p>
-                </div>
+    {% for exp in site.data.experience.list %}
+    <div class="row g-1 mb-0">
+        <div class="grid-container">
+            <div class="left-part">
+                <p><b><h5>{{ exp.name }}</h5></b></p>
+                {% if exp.company contains 'http' %}
+                    <p><i><a href="{{ exp.company }}">{{ exp.company }}</a></i></p>
+                {% elsif exp.company contains 'mark>' %}
+                    <p class="shadowed-text">{{ exp.company }}</p>
+                {% else %}
+                    <p><i>{{ exp.company }}</i></p>
+                {% endif %}
             </div>
-        </div>
-
-        <div class="row g-0 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>위메프</h5></b></p>
-                    <p><i><a href="https://company.wemakeprice.com/">https://company.wemakeprice.com/</a></i></p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2022. 10 ~ 2023. 05</p>
-                    <p><b>부서</b> : 플랫폼개발실 데이터수집개발팀</p>
-                    <p><b>업무</b> : 데이터수집 백엔드 개발(Java/Kotlin)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-0 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>라이픽</h5></b></p>
-                    <p class="shadowed-text">
-                        <mark>07.31 사업종료</mark>
-                    </p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2022. 07 ~ 2022. 08</p>
-                    <p><b>부서</b> : Backend Engineer</p>
-                    <p><b>업무</b> : 라이픽 서비스 백엔드 개발(Java)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-0 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>프레시코드</h5></b></p>
-                    <p><i><a href="https://www.freshcode.me">https://www.freshcode.me</a></i></p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2021. 12 ~ 2022. 06</p>
-                    <p><b>부서</b> : Backend Engineer</p>
-                    <p><b>업무</b> : 프레시코드 서비스 백엔드 개발(Java)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-0 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>넥스파시스템</h5></b></p>
-                    <p><i><a href="http://www.nexpa.co.kr">http://www.nexpa.co.kr</a></i></p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2016. 01 ~ 2021. 12</p>
-                    <p><b>활동</b> : 기업부설연구소(주차유도)</p>
-                    <p><b>직급</b> : 전임연구원</p>
-                    <p><b>업무</b> : 주차유도 솔루션 개발(.NET, Java)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row g-0 mb-0">
-            <div class="grid-container">
-                <div class="left-part">
-                    <p><b><h5>티엔에테크</h5></b></p>
-                    <p><i><a href="http://www.tnetech.co.kr">http://www.tnetech.co.kr</a></i></p>
-                </div>
-                <div class="right-part">
-                    <p><b>기간</b> : 2013. 10 ~ 2015. 06</p>
-                    <p><b>부서</b> : 기업부설연구소</p>
-                    <p><b>직급</b> : 연구원</p>
-                    <p><b>업무</b> : 계측장비 소프트웨어 개발(C++, C#, VB)</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 주요 성과 - 퍼플아이오  -->
-        <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
-        <div class="row g-1 mb-5">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>코오롱 캠페인 시스템 개발</i></u></font></h4>
-            </div>
-
-            <div class="col-md-10" style="margin-top: 10px;"><p class="fw-bold">코오롱 캠페인 시스템 개발
-            </p>
-                <ul>
-                    <li>캠페인 플로우차트 컴포넌트 레벨단의 외부 데이터 연동 컴포넌트 개발</li>
-                    <li>코오롱 고객리스트을 통해 특정군 리스팅 이후 리스팅 선택/병합 하여 히스토리 유지</li>
-                    <li>리스팅 고객 대상으로 채널성 데이터 발송 시스템 개발(SMS, APP PUSH, EMAIL)</li>
-                    <li>리스팅 고객 대상으로 쿠폰 전송</li>
-                    <li>'Spring StateMachine' 을 통해 상태 관리 이벤트 처리</li>
-                    <li>External(외부) 대용량 요청 서버 개발</li>
-                    <li>Hexagonal Architecture</li>
-                </ul>
-                <p class="fw-bold">프로젝트 개발 Version</p>
-                <ul>
-                    <li>Kotlin Version : <b>1.9.25</b></li>
-                    <li>Spring boot Version : <b>3.4.2 RELEASE</b></li>
-                    <li>Gradle Version : <b>8.6</b></li>
-                    <li>ECT. : <b>Kotlin, Kotlin Exposed, Spring StateMachine, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring Cache, Spring Security, Spring
-                        Quartz, Spring Batch, Spring Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="row g-1 mb-5">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>코오롱 오퍼허브 통합 쿠폰서비스 개발</i></u></font></h4>
-            </div>
-
-            <div class="col-md-10" style="margin-top: 10px;"><p class="fw-bold">코오롱 오퍼허브 통합 쿠폰서비스 개발
-            </p>
-                <ul>
-                    <li>온/오프라인 통합 쿠폰/포인트 허브 개발</li>
-                    <li>코쿠폰 Core 서버로서 다양한 채널(웹, 앱, 오프라인)에서 쿠폰/포인트 발행, 조회, 사용, 취소, 이력 관리</li>
-                    <li>타겟팅 유저 분석 데이터 수집(캠페인 연동)</li>
-                </ul>
-                <p class="fw-bold">프로젝트 개발 Version</p>
-                <ul>
-                    <li>Kotlin Version : <b>1.9.25</b></li>
-                    <li>Spring boot Version : <b>3.4.2 RELEASE</b></li>
-                    <li>Gradle Version : <b>8.6</b></li>
-                    <li>ECT. : <b>Kotlin, Spring Data(JPA, JDBC, Redis), Spring Cache, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3)</b>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!-- 주요 성과 - 위메프  -->
-        <div class="page-break"></div>
-        <h3 class="fw-bold border-bottom pb-2= mb-2" style="color: red;">Achievement - 위메프</h3>
-        <div class="row g-1 mb-5" style="margin-button: 10px;">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>위메프 EP 데이터 개발</i></u></font></h4>
-            </div>
-
-            <div class="col-md-10" style="margin-top: 10px;"><p class="fw-bold">위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
-            </p>
-                <ul>
-                    <li>위메프 상품 데이터 (2억~) 외부 노출 데이터 추출</li>
-                    <li>TF 프로젝트 리딩</li>
-                    <li>기존 IDC → Cloud 진행</li>
-                    <li>PHP → Kotlin(전사기술스택 전환)</li>
-                    <li>Monolithic → MSA 구조 변경</li>
-                    <li>스트리밍 아키텍쳐</li>
-                    <li>GCP 플랫폼 전환</li>
-                </ul>
-                <p class="fw-bold">프로젝트 개발 Version</p>
-                <ul>
-                    <li>Kotlin Version : <b>1.8.0</b></li>
-                    <li>Spring boot Version : <b>3.0.2 RELEASE</b></li>
-                    <li>Gradle Version : <b>7.6</b></li>
-                    <li>ECT. : <b>Spring Batch, JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP
-                        FireStore, GCS</b></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="row g-1 mb-0">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>리뷰 데이터 수집 개발</i></u></font></h4>
-            </div>
-            <div class="col-md-10" style="margin-top: 10px;"><p class="fw-bold">리뷰 데이터 수집
-            </p>
-                <ul>
-                    <li>제휴사로 부터 리뷰 데이터를 제공받아 통합하여 리뷰를 표출 한다.</li>
-                    <li>약 2천만건의 리뷰 데이터 수집, 팀내 상품수집 데이터(8~10억건)</li>
-                    <li>버티카배치 데이터 통합 가공 서버 진행</li>
-                </ul>
-                <p class="fw-bold">프로젝트 개발 Version
+            <div class="right-part">
+                {% for experience in exp.experience %}
+                    <p><b>기간</b> : {{ experience.range }}</p>
+                    <p><b>부서</b> : {{ experience.department }}</p>
+                {% endfor %}
+                <p><b>업무</b> : 
+                    {% for work in exp.work %}
+                        {{ work }}{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
                 </p>
-                <ul>
-                    <li>Java Version : <b>17</b></li>
-                    <li>Spring boot Version : <b>2.7.6 RELEASE</b></li>
-                    <li>Gradle Version : <b>7.6</b></li>
-                    <li>ECT. : <b>Spring Batch, H2, JUnit5, VerticaDB, Mybatis, Kafka, AWS SQS, AWS S3, AWS EC2, MongoDB </b></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!-- 주요 성과 - 프레시코드  -->
-        <div class="page-break"></div>
-        <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: green;">Achievement - FreshCode</h3>
-        <div class="row g-1 mb-3">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>프레시코드 서비스 CLOVER</i></u></font></h4>
-            </div>
-
-            <div class="col-md-10" style="margin-top: 10px;">
-                <p class="fw-bold">프레시코드 서비스 CLOVER</p>
-                <ul>
-                    <li>데이터 베이스 AS-IS 구조 파악 및 TO-BE 구조 설계</li>
-                    <li>로그인 유저별 장바구니 조회/추가/삭제/변경</li>
-                    <li>비로그인 장바구니 담긴 내용 로그인시 장바구니 내역 합산</li>
-                    <li>매뉴별 리뷰 기능</li>
-                    <li>스팟도메인 거리별 조회, 필터 기능</li>
-                    <li>근처의 스팟, 신규, 역세권, 이벤트 스팟</li>
-                    <li>서비스 API JUnit5 적용 테스트 커버리지 50% 적용</li>
-                    <li>배송, 스팟, 유저, 매뉴 어드민 페이지 개발</li>
-                    <li>프레시코드 어드민 개발</li>
-                </ul>
-            </div>
-
-            <div class="col-md-10" style="margin-top: 10px;">
-                <p class="fw-bold">프로젝트 개발 Version
-                </p>
-                <ul>
-                    <li>Java Version : <b>11</b></li>
-                    <li>Spring boot Version : <b>2.4.11 RELEASE</b></li>
-                    <li>Gradle Version : <b>6.8.3</b></li>
-                    <li>ECT. : <b>Spring MVC, Spring Batch, MySQL, H2, JPA, QueryDSL, Swagger3, JUnit5, ElasticSearch</b></li>
-                </ul>
-            </div>
-
-        </div>
-
-
-        <!-- 주요 성과 - 넥스파시스템 -->
-        <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: blue;">Achievement - Nexpa System</h3>
-        <div class="row g-1 mb-0">
-            <div class="col-md-5" style="display: flex; justify-content: center; align-items: center;">
-                <h4><font size="5"><u><i>주차유도 솔루션 클라우드 전환</i></u></font></h4>
-            </div>
-            <div class="col-md-10" style="margin-top: 10px;"><p class="fw-bold">주차유도 솔루션 클라우드 전환하면서 스마트 카메라와의 연동 서버 개발
-            </p>
-                <ul>
-                    <li>넥스파시스템 주차유도 솔루션 클라우화 통합서버 개발</li>
-                    <li>기존 카메라(영상/이미지) → 로컬서버 영상/이미지 번호인식에서 클라우드 서버 운영</li>
-                    <li>사내 주차유도 솔루션의 통합 REST 서버 개발</li>
-                    <li>번호인식 비즈니스 로직 구현</li>
-                    <li>등록 되어 있는 클라이언트와 유저만 서버와 통신 (IP Filter))</li>
-                    <li>스마트 카메라와의 직접적인 구현</li>
-                </ul>
-                <p class="fw-bold">프로젝트 개발 Version</p>
-                <ul>
-                    <li>Java Version : <b>amazon corretto-11</b></li>
-                    <li>Spring boot Version : <b>2.3.4 RELEASE</b></li>
-                    <li>Gradle Version : <b>6.7.0</b></li>
-                    <li>ECT. : <b>Spring MVC, Gradle, PostgreSQL, JPA, QueryDSL, JUnit4</b></li>
-                </ul>
-
             </div>
         </div>
     </div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 퍼플아이오 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
+
+    {% for project in site.data.achievement_purpleio %}
+    {% unless forloop.first %}
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
+    {% endunless %}
+    
+    <div class="row g-1 mb-5">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 위메프 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red;">Achievement - 위메프</h3>
+
+    {% for project in site.data.achievement_wmp %}
+    {% unless forloop.first %}
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red;">Achievement - 위메프</h3>
+    {% endunless %}
+
+    <div class="row g-1 mb-5">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- 주요 성과 - 프레시코드 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: green;">Achievement - FreshCode</h3>
+
+    {% for project in site.data.achievement_freshcode %}
+    {% unless forloop.first %}
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: green;">Achievement - FreshCode</h3>
+    {% endunless %}
+
+    <div class="row g-1 mb-5">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+        
+        {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+        {% endif %}
+        
+        {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+        {% endif %}
+        
+        {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+        {% endif %}
+    </div>
+</div>
+{% endfor %}
+
+    <!-- 주요 성과 - 넥스파시스템 -->
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: blue;">Achievement - Nexpa System</h3>
+    
+    {% for project in site.data.achievement_nexpa %}
+    {% assign project_index = forloop.index0 %}
+    {% assign page_number = project_index | divided_by: 2 %}
+    {% assign position_in_page = project_index | modulo: 2 %}
+
+    {% if position_in_page == 0 and project_index > 0 %}
+    <div class="page-break"></div>
+    <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: blue;">Achievement - Nexpa System</h3>
+    {% endif %}
+
+    <div class="row g-1 mb-3">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
+        </div>
+        <div class="col-md-10" style="margin-top: 10px;">
+            {% if project.description %}
+            <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
+            {{ project.description | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.achievements %}
+            <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
+            {{ project.achievements | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.troubleshooting %}
+            <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
+            {{ project.troubleshooting | strip | markdownify }}
+            {% endif %}
+            
+            {% if project.version %}
+            <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
+            {{ project.version | strip | markdownify }}
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
 
 
 </div>
