@@ -34,7 +34,7 @@
     * ETC. : <b>JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
 - layout: left
   name: 리뷰 데이터 수집 개발
-  link: https://drive.google.com/file/d/1YFDGj7h1SDnooifLYCz8_hWB6sbj_9Bo/view?usp=drive_link
+  link: https://drive.google.com/file/d/1w83yhYpyQeFFEAmeKA-8WJENvoF3kC2U/view?usp=drive_link
 #  quote: >
 #    리뷰 데이터 수집
   description: |
