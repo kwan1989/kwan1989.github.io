@@ -15,6 +15,15 @@
 
     <style>
         /* PDF 출력을 위한 스타일 */
+        a {
+            color: #0066cc !important;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .grid-container {
             display: flex;
             justify-content: space-between;
@@ -274,11 +283,12 @@
 
     
     
-    
+
     <div class="row g-1 mb-5">
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>코오롱 오퍼허브 통합 쿠폰서비스 개발</i></u></font></h4>
         </div>
+        
 
         <div class="col-md-10" style="margin-top: 10px;">
             
@@ -291,7 +301,7 @@
 
             
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             <ul>
   <li><strong>통합 쿠폰 허브 구축</strong>: <b>다양한 발행처를 하나의 통합 허브로 통합</b></li>
@@ -308,9 +318,9 @@
   <li><strong>시스템 안정성</strong>: <b>중복 발행 오류율 0.01% 이하</b></li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             <ul>
   <li><strong>쿠폰 중복 발행 동시성 이슈</strong>
@@ -333,9 +343,9 @@
   </li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             <ul>
   <li>Kotlin Version : <b>1.9.25</b></li>
@@ -344,19 +354,24 @@
   <li>ETC. : <b>Kotlin, Spring Data(JPA, JDBC, Redis), Spring Cache, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3)</b></li>
 </ul>
 
-            
-        </div>
+        
     </div>
-    
+</div>
+
     
     <div class="page-break"></div>
     <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
     
-    
+
     <div class="row g-1 mb-5">
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>코오롱 캠페인 시스템 개발</i></u></font></h4>
         </div>
+        
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="https://drive.google.com/file/d/1GyZow4eGJXMqRbS-UDclib-0PanD1URT/view?usp=drive_link" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        
 
         <div class="col-md-10" style="margin-top: 10px;">
             
@@ -368,7 +383,7 @@
 
             
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             <ul>
   <li><strong>시스템 전환</strong>: <b>IBM 유니카 → 자체 개발 시스템 마이그레이션</b></li>
@@ -380,9 +395,9 @@
   <li><strong>운영 효율</strong>: <b>캠페인 설정 시간 80% 단축</b></li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             <ul>
   <li><strong>대용량 채널 발송 시 TPS 급증 문제</strong>
@@ -407,20 +422,15 @@
     <ul>
       <li>문제: 동기식 DB 처리로 인한 성능 병목 및 동시성 이슈</li>
       <li>해결1: 임시테이블 활용으로 DB 동시성과 읽기 성능 분리</li>
-      <li>해결2: Kotlin Coroutines Flow + R2DBC를 통한 비동기 논블로킹 처리로 성능 향상</li>
-    </ul>
-  </li>
-  <li><strong>동적 쿼리 복잡성 해결</strong>
-    <ul>
-      <li>문제: 다양한 조건의 동적 쿼리 작성 및 유지보수의 어려움</li>
-      <li>해결: Kotlin Exposed 을 활용한 동적 쿼리 구현</li>
+      <li>해결2: Kotlin Exposed 을 활용한 동적 쿼리 구현로 인한 동적테이블 핸들링</li>
+      <li>해결3: Kotlin Coroutines Flow + R2DBC를 통한 비동기 논블로킹 처리로 성능 향상</li>
     </ul>
   </li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             <ul>
   <li>Kotlin Version : <b>1.9.25</b></li>
@@ -429,10 +439,10 @@
   <li>ETC. : <b>Kotlin, Kotlin Exposed, Spring Data(JPA, JDBC, Redis, R2DBC, Ldap), Spring StateMachine/Cache/Security/Quartz/Batch/Actuator, QueryDSL, AWS(ECR, ECS, RDS, ElastiCache, S3, SNS, SQS, Lambda(Python))</b></li>
 </ul>
 
-            
-        </div>
+        
     </div>
-    
+</div>
+
 
     <!-- 주요 성과 - 위메프 -->
     <div class="page-break"></div>
@@ -445,6 +455,11 @@
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>위메프 EP(Engine Page) 데이터 개발</i></u></font></h4>
         </div>
+        
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="https://drive.google.com/file/d/1s0-yirJ8kCmZ-9pCBdpA9_ozlSs4QZmi/view?usp=sharing" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        
 
         <div class="col-md-10" style="margin-top: 10px;">
             
@@ -459,7 +474,7 @@
 
             
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             <ul>
   <li>상품 데이터 처리 시간 70% 단축 (12시간 -&gt; 4시간)</li>
@@ -469,9 +484,9 @@
   <li>MSA 구조 도입으로 서비스 배포 주기 단축</li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             <ul>
   <li>대용량 데이터 처리 시 발생하는 OOM 이슈
@@ -493,9 +508,9 @@
   </li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             <ul>
   <li>Kotlin Version : <b>1.8.0</b></li>
@@ -504,10 +519,10 @@
   <li>ETC. : <b>JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b></li>
 </ul>
 
-            
-        </div>
+        
     </div>
-    
+</div>
+
     
     <div class="page-break"></div>
     <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: red;">Achievement - 위메프</h3>
@@ -517,6 +532,11 @@
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>리뷰 데이터 수집 개발</i></u></font></h4>
         </div>
+        
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="https://drive.google.com/file/d/1YFDGj7h1SDnooifLYCz8_hWB6sbj_9Bo/view?usp=drive_link" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        
 
         <div class="col-md-10" style="margin-top: 10px;">
             
@@ -528,7 +548,7 @@
 
             
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             <ul>
   <li>리뷰 데이터 정합성 향상 및 안정성 개선
@@ -547,9 +567,9 @@
   <li>초기 200만건에서 3000만건으로 안정적 확장</li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             <ul>
   <li>이미지 데이터 처리 시 병목 현상
@@ -571,9 +591,9 @@
   </li>
 </ul>
 
-            
+        
 
-            
+        
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             <ul>
   <li>Java Version : <b>17</b></li>
@@ -582,10 +602,10 @@
   <li>ETC. : <b>Spring Batch, H2, JUnit5, VerticaDB, Mybatis, Kafka, AWS SQS, AWS S3, AWS EC2, MongoDB </b></li>
 </ul>
 
-            
-        </div>
+        
     </div>
-    
+</div>
+
 
     <!-- 주요 성과 - 프레시코드 -->
     <div class="page-break"></div>
@@ -598,6 +618,7 @@
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>프레시코드 서비스 CLOVER</font></i></u></font></h4>
         </div>
+        
 
         <div class="col-md-10" style="margin-top: 10px;">
             
@@ -648,8 +669,8 @@
 
         
     </div>
-</div>
-
+    </div>
+    
 
     <!-- 주요 성과 - 넥스파시스템 -->
     <div class="page-break"></div>
@@ -663,9 +684,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>주차유도 솔루션 클라우드 전환</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -705,9 +728,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>SKT 주차장별 주차 현황 데이터 서버</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -745,9 +770,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>통합장애알람 솔루션 개발</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -785,9 +812,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>VDI 솔루션 개발</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -829,9 +858,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>NPCloudUploader</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -866,9 +897,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>nxLPRTest</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>
@@ -908,9 +941,11 @@
     
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>NPSettingManager</i></u></font></h4>
         </div>
+        
+        
         <div class="col-md-10" style="margin-top: 10px;">
             
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>

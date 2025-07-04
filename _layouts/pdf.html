@@ -15,6 +15,15 @@
 
     <style>
         /* PDF 출력을 위한 스타일 */
+        a {
+            color: #0066cc !important;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .grid-container {
             display: flex;
             justify-content: space-between;
@@ -166,11 +175,16 @@
     <div class="page-break"></div>
     <h3 class="fw-bold border-bottom pb-2 mb-2" style="color: purple;">Achievement - 퍼플아이오</h3>
     {% endunless %}
-    
+
     <div class="row g-1 mb-5">
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
         </div>
+        {% if project.link %}
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="{{ project.link }}" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        {% endif %}
 
         <div class="col-md-10" style="margin-top: 10px;">
             {% if project.description %}
@@ -178,23 +192,23 @@
             {{ project.description | strip | markdownify }}
             {% endif %}
 
-            {% if project.achievements %}
+        {% if project.achievements %}
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             {{ project.achievements | strip | markdownify }}
-            {% endif %}
+        {% endif %}
 
-            {% if project.troubleshooting %}
+        {% if project.troubleshooting %}
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             {{ project.troubleshooting | strip | markdownify }}
-            {% endif %}
+        {% endif %}
 
-            {% if project.version %}
+        {% if project.version %}
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             {{ project.version | strip | markdownify }}
-            {% endif %}
-        </div>
+        {% endif %}
     </div>
-    {% endfor %}
+</div>
+{% endfor %}
 
     <!-- 주요 성과 - 위메프 -->
     <div class="page-break"></div>
@@ -210,6 +224,11 @@
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
         </div>
+        {% if project.link %}
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="{{ project.link }}" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        {% endif %}
 
         <div class="col-md-10" style="margin-top: 10px;">
             {% if project.description %}
@@ -217,23 +236,23 @@
             {{ project.description | strip | markdownify }}
             {% endif %}
 
-            {% if project.achievements %}
+        {% if project.achievements %}
             <h5 class="fw-bold mt-4" style="color: #28a745;">📊 주요 성과</h5>
             {{ project.achievements | strip | markdownify }}
-            {% endif %}
+        {% endif %}
 
-            {% if project.troubleshooting %}
+        {% if project.troubleshooting %}
             <h5 class="fw-bold mt-4" style="color: #dc3545;">🔧 트러블 슈팅</h5>
             {{ project.troubleshooting | strip | markdownify }}
-            {% endif %}
+        {% endif %}
 
-            {% if project.version %}
+        {% if project.version %}
             <h5 class="fw-bold mt-4" style="color: #17a2b8;">⚙️ 기술 스택</h5>
             {{ project.version | strip | markdownify }}
-            {% endif %}
-        </div>
+        {% endif %}
     </div>
-    {% endfor %}
+</div>
+{% endfor %}
 
     <!-- 주요 성과 - 프레시코드 -->
     <div class="page-break"></div>
@@ -249,6 +268,11 @@
         <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
         </div>
+        {% if project.link %}
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="{{ project.link }}" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        {% endif %}
 
         <div class="col-md-10" style="margin-top: 10px;">
             {% if project.description %}
@@ -271,8 +295,8 @@
             {{ project.version | strip | markdownify }}
         {% endif %}
     </div>
-</div>
-{% endfor %}
+    </div>
+    {% endfor %}
 
     <!-- 주요 성과 - 넥스파시스템 -->
     <div class="page-break"></div>
@@ -289,9 +313,15 @@
     {% endif %}
 
     <div class="row g-1 mb-3">
-        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div class="col-md-5" style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
             <h4><font size="5"><u><i>{{ project.name }}</i></u></font></h4>
         </div>
+        {% if project.link %}
+        <p style="display: flex; justify-content: center; align-items: center; margin-top: 0;">
+            <a href="{{ project.link }}" style="color: #0066cc !important; text-decoration: underline; font-style: italic;">[ Architecture Diagram ]</a>
+        </p>
+        {% endif %}
+        
         <div class="col-md-10" style="margin-top: 10px;">
             {% if project.description %}
             <h5 class="fw-bold mt-4" style="color: #6f42c1;">🚀 설명</h5>

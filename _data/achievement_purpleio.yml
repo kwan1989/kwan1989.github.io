@@ -37,7 +37,7 @@
 
 - layout: left
   name: 코오롱 캠페인 시스템 개발
-  link: https://docs.google.com/document/d/1o68EzzWFxddNl5-8XGER87Zr-cx7IudiQw51SIvkQSk/edit?tab=t.0
+  link: https://drive.google.com/file/d/1GyZow4eGJXMqRbS-UDclib-0PanD1URT/view?usp=drive_link
 #  quote: |
 #    코오롱 캠페인 시스템 개발
   description: |
@@ -64,10 +64,8 @@
     * **대용량 데이터 처리 성능 최적화**
       - 문제: 동기식 DB 처리로 인한 성능 병목 및 동시성 이슈
       - 해결1: 임시테이블 활용으로 DB 동시성과 읽기 성능 분리
-      - 해결2: Kotlin Coroutines Flow + R2DBC를 통한 비동기 논블로킹 처리로 성능 향상
-    * **동적 쿼리 복잡성 해결**
-      - 문제: 다양한 조건의 동적 쿼리 작성 및 유지보수의 어려움
-      - 해결: Kotlin Exposed 을 활용한 동적 쿼리 구현
+      - 해결2: Kotlin Exposed 을 활용한 동적 쿼리 구현로 인한 동적테이블 핸들링
+      - 해결3: Kotlin Coroutines Flow + R2DBC를 통한 비동기 논블로킹 처리로 성능 향상
 #  environment: >
 #    프로젝트 개발 Version
   version: |

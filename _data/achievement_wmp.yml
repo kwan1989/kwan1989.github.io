@@ -1,6 +1,6 @@
 - layout: left
   name: 위메프 EP(Engine Page) 데이터 개발
-  link: https://docs.google.com/document/d/1SxWf4Iyt_I3tLesZLkq9Ellh3N9twDnk9cozSmDT7BE/edit
+  link: https://drive.google.com/file/d/1s0-yirJ8kCmZ-9pCBdpA9_ozlSs4QZmi/view?usp=sharing
 #  quote: >
 #    위메프 상품 데이터 EP(Engine Page) 외부로 노출 데이터 개발
   description: |
@@ -34,7 +34,7 @@
     * ETC. : <b>JPA, MySQL, QueryDSL, debezium, ElasticSearch, Kafka, GCP Pub/Sub, GCP Scheduler, GCP FireStore, GCS</b>
 - layout: left
   name: 리뷰 데이터 수집 개발
-  link: https://docs.google.com/document/d/1FuNHo-KGu3vG5ygOWX_OooXbIamF4tbCQ0Qrvaqz3zI/edit
+  link: https://drive.google.com/file/d/1YFDGj7h1SDnooifLYCz8_hWB6sbj_9Bo/view?usp=drive_link
 #  quote: >
 #    리뷰 데이터 수집
   description: |
