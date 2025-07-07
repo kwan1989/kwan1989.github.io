@@ -8,8 +8,8 @@ list:
     description: 'Backend Engineer'
     position: '매니저'
     work:
-      - '코오롱 캠페인 시스템 백엔드 개발(Kotlin)'
-      - '코오롱 통합 쿠폰 시스템 백엔드 개발(Kotlin)'
+      - '코오롱 캠페인 서비스 백엔드 개발(Kotlin)'
+      - '코오롱 통합 쿠폰 서비스 백엔드 개발(Kotlin)'
     company: 'https://purple.io'
 
   - name: '위메프'
