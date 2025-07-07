@@ -1,10 +1,10 @@
 list:
   - name: '퍼플아이오'
     experience:
-      - range: '2024. 07 ~ '
-        department: '신사업개발팀 캠페인스쿼드'
       - range: '2025. 02 ~ '
         department: '서비스플랫폼팀 CRM Part (겸직, 통합쿠폰 개발)'
+      - range: '2024. 07 ~ '
+        department: '신사업개발팀 캠페인스쿼드'
     description: 'Backend Engineer'
     position: '매니저'
     work:

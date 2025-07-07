@@ -156,11 +156,20 @@
                     <p><b>기간</b> : {{ experience.range }}</p>
                     <p><b>부서</b> : {{ experience.department }}</p>
                 {% endfor %}
-                <p><b>업무</b> : 
+                <p><b>업무</b> :
                     {% for work in exp.work %}
                         {{ work }}{% unless forloop.last %}, {% endunless %}
                     {% endfor %}
                 </p>
+
+<!--                    여기에 * 형식으로 라인바이 라인으로 할 수 있음. 그러나 포멧 크기상 변경-->
+<!--                <p><b>업무</b> :</p>-->
+<!--                <ul>-->
+<!--                    {% for work in exp.work %}-->
+<!--                    <li>{{ work }}</li>-->
+<!--                    {% endfor %}-->
+<!--                </ul>-->
+
             </div>
         </div>
     </div>
